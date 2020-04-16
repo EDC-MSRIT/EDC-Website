@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -113,3 +114,6 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .pnp.*
+=======
+node_modules/
+>>>>>>> idearise.ejs added
