@@ -1,6 +1,9 @@
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      background-color:#d2d4d6;
 }
 
 #mainNav {
@@ -125,15 +128,85 @@ body{
       font-weight: bold;
       text-decoration: underline;
       margin-bottom: 30px;
+      color:rgb(127, 71, 117);
   }
   #mainContent p{
-      font-size:1.5em;
+      font-size:1rem;
   }
 
   .middle{
-      font-size:1.2em;
+      font-size:1rem;
   }
 
+#foot{
+  margin-top:50px;
+   background-color: #d2d4d6;
+ 
+}
+#foot{
+ background: #d2d4d6;
+}
+
+h4{
+  font-size:1rem;
+}
 
 
+.carousel {
+   width:60%;
+  
+}
 
+.carousel-control-next-icon{
+  color:black;
+}
+
+.carousel-item img{
+  height:60vh;
+  width:50px;
+}
+
+@media(max-width: 1200px){
+  
+  .carousel {
+   width:70% !important;
+    
+    }
+    .carousel-item img{
+      height:60vh !important;
+    }
+}
+@media(max-width: 990px){
+  
+  .carousel {
+   width:80% !important;
+   
+    }
+    .carousel-item img{
+      height:50vh !important;
+    }
+}
+@media(max-width: 766px){
+  
+  .carousel {
+   width:90% !important;
+  
+    }
+    .carousel-item img{
+      height:50vh !important;
+    }
+}
+@media(max-width: 550px){
+  
+  .carousel {
+   width:100% !important;
+    
+    }
+    .carousel-item img{
+      height:50vh !important;
+    }
+    #obj h3{
+        font-size:1.95em !important;
+        font-weight: bold !important;
+    }
+}
