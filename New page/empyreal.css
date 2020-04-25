@@ -35,21 +35,7 @@ body{
     color: blanchedalmond;
 }
 
-.carousel-item{
-    height: 100vh;
-}
 
-.event-carousel-item{
-    height: 30vh;
-    width: 30vh;
-    background-size: contain;
-}
-
-.slider-slide{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
 #previousBtn{
    position: absolute;
    top: 50%;
@@ -71,12 +57,16 @@ body{
     cursor: pointer;
 }
 
-@media screen and (max-width: 717px){
-    .d-flex{
-        flex-direction: column;
-    }
+.event-card{
+    padding:10px;
 }
 
+.event-carousel-inner{
+    display: flex;
+    width:400px;
+    height: 250px;
+    align-items: center;
+}
 .event-card-container{
     text-align: center;
     padding-top: 3rem;
@@ -115,4 +105,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:1075px){
+    .event-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .event-carousel-inner{
+        
+        width:100%;
+        height: 250px;
+       
+    }
 }
