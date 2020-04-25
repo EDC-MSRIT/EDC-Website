@@ -419,6 +419,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   
+  .startup-logo{
+    border-radius: 50%;
+    height: 250px;
+    width:250px;
+  }
+
   .footer {
     padding: 25px 0;
     text-align: center;
