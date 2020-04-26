@@ -40,6 +40,8 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
         type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -52,54 +54,22 @@
     <!-- Local CSS -->>
     <link rel="stylesheet" href="css/team.css">
     
+  <link href="css/scrollbar.css" rel="stylesheet">    
 </head>
 
 <body class="all">
+   
     <!-- Page Loader -->
     <!-- <section id="pageloader">
 <div class="loader-item fa fa-spin colored-border"></div>
 </section> -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="index - Copy (1).html"></a>
-          <img src="img/edclogoweb1.png" width="50" height="50" alt="edc logo">
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#portfolio">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#services">Startups</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger active" href="/#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<%- include('partials/navbar.ejs') %>
     <!-- End Navigation Section -->
     <!-- Page Header -->
+    <div class="background-triangle"></div>
     <div class="page_header_inner" style="padding-top: 30px">
         <!-- Header -->
-        <h1 class="page_head normal text-center " style="color: rgb(127, 71, 117);">
+        <h1 class="page_head normal text-center " style="color: black;">
             EDC Team
         </h1>
     </div>
@@ -114,7 +84,7 @@
             <!-- Row -->
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title" style="color: rgb(127, 71, 117);">Overall Coordinators
+                <h2 class="title" style="color: black;">Overall Coordinators
                 </h2>
             </div>
             <!-- /Section header -->
@@ -653,7 +623,7 @@
             <!-- /team -->
             <!-- team -->
 
-            <div class="team team__right">
+            <div class="team team__middle">
                 <div class="team-img">
                     <img class="img-responsive" src="img/sarthak.jpeg" alt="">
                     <div class="overlay">

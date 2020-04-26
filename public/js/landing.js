@@ -1,13 +1,3 @@
-console.log('Hello')
-
-
-var slideFromLeft = {
-    delay:500,
-    distance: '50%',
-    origin: 'left',
-    opacity: 0
-};
-
 var slideFromRight = {
     delay:500,
     distance: '50%',
