@@ -24,6 +24,7 @@
   <!-- Custom styles for this template -->
   <link href="css/eventcalender.css" rel="stylesheet">
 
+  <link href="css/scrollbar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,44 +32,8 @@
 
 
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index - Copy (1).html"></a>
-      <img src="img/edclogoweb1.png" width="50" height="50" alt="edc logo">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger active" href="/#portfolio">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#services">Startups</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index - Copy (1).html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   
+<%- include('partials/navbar.ejs') %>
 
 
 
@@ -85,7 +50,7 @@
         <ul class="timeline">
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/orientation.JPG" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/orientation.JPG" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -99,7 +64,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/meet1.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/meet1.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -114,7 +79,7 @@
           </li>
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/upmeet.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/upmeet.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -129,7 +94,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/under25.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/under25.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -144,7 +109,7 @@
           </li>
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/ind2.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/ind2.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -160,7 +125,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/mystory.jpg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/mystory.jpg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -174,7 +139,7 @@
           </li>
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/meet2.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/meet2.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -190,7 +155,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/ind1.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/ind1.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -206,7 +171,7 @@
           </li>
           <li>
             <div class="timeline-image">
-              <img class="rounded-circle img-fluid" src="img/meet3.jpeg" alt="">
+              <img class="rounded-circle img-fluid" src="images/eventCalender/meet3.jpeg" alt="">
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -232,13 +197,9 @@
     </div>
   </div>
   <!-- Footer -->
-  <footer class="footer" style="background: white;">
-    <!-- Your Company Name -->
-    <h2 class="company-name condensed uppercase white bold">The Entrepreneurship Development Center</h2>
-    <!-- Copyright -->
-    <p class="copyright normal" style="text-align: center;">© 2019-20 All Rights Reserved. Made with <i
-        class="fas fa-heart" style="color: red"></i> by EDC Web team.</p>
-  </footer>
+  <%- include('partials/footer') %>
+
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

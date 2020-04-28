@@ -40,62 +40,36 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
         type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <!--ScrollReveal.js CDN-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal.debug = true;
+    </script>
     <!-- Local CSS -->>
     <link rel="stylesheet" href="css/team.css">
     
+  <link href="css/scrollbar.css" rel="stylesheet">    
 </head>
 
 <body class="all">
+   
     <!-- Page Loader -->
     <!-- <section id="pageloader">
 <div class="loader-item fa fa-spin colored-border"></div>
 </section> -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="index - Copy (1).html"></a>
-          <img src="img/edclogoweb1.png" width="50" height="50" alt="edc logo">
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#portfolio">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#services">Startups</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger active" href="/#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<%- include('partials/navbar.ejs') %>
     <!-- End Navigation Section -->
     <!-- Page Header -->
+    <div class="background-triangle"></div>
     <div class="page_header_inner" style="padding-top: 30px">
         <!-- Header -->
-        <h1 class="page_head normal text-center " style="color: rgb(127, 71, 117);">
+        <h1 class="page_head normal text-center " style="color: black;">
             EDC Team
         </h1>
     </div>
@@ -110,21 +84,17 @@
             <!-- Row -->
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title" style="color: rgb(127, 71, 117);">Overall Coordinators
+                <h2 class="title" style="color: black;">Overall Coordinators
                 </h2>
             </div>
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/vaibhav.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/vaibhav.jpeg" alt="Vaibhav Jha">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/vaibhav-jha-069425166/">
                                 <i class="fa fa-linkedin">
@@ -145,16 +115,12 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/vivek.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/vivek.jpeg" alt="Vivek Kumar">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/vivek-kumar-182935183">
                                 <i class="fa fa-linkedin">
@@ -181,16 +147,12 @@
             <!-- Section header -->
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/niraj.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/niraj.jpeg" alt="Niraj Agarwal">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/niraj-agarwalla-800191125">
                                 <i class="fa fa-linkedin">
@@ -211,16 +173,12 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/edc1.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/rubina.jpeg" alt="Rubina Kaur Ajmani">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/rubina-kaur-ajmani-514563151">
                                 <i class="fa fa-linkedin">
@@ -242,16 +200,12 @@
 
             <!-- /team -->
             <!-- /Row -->
-            <div class="team">
+            <div class="team team__right">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/annada.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/annada.jpeg" alt="Annada Shukla">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="http://linkedin.com/in/annada-shukla-3628a4151facebook.com/">
                                 <i class="fa fa-linkedin">
@@ -276,16 +230,12 @@
             <!-- Section header -->
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/abhigya.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/abhigya.jpeg" alt="Abhigya Parashar">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="https://linkedin.com/in/abhigya-parashar-3bb740159/">
                                 <i class="fa fa-linkedin">
@@ -307,16 +257,12 @@
             <!-- /team -->
             <!-- team -->
 
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/aditya.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/aditya.jpeg" alt="Aditya Mishra">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/aditya-mishra-715935161">
                                 <i class="fa fa-linkedin">
@@ -339,16 +285,12 @@
             <!-- /team -->
             <!-- team -->
 
-            <div class="team">
+            <div class="team team__right">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/jagjot.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/jagjot.jpeg" alt="Jagjot Singh">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/jagjot-singh-a97979166">
                                 <i class="fa fa-linkedin">
@@ -384,16 +326,12 @@
 
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/raksitha.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/raksitha.jpeg" alt="Rakshita H">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/rakshita-h">
                                 <i class="fa fa-linkedin">
@@ -414,16 +352,12 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/aakriti.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/aakriti.jpeg" alt="Aakriti Suman">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/aakriti-suman-b6032115a/">
                                 <i class="fa fa-linkedin">
@@ -446,16 +380,12 @@
             <!-- /team -->
             <!-- /Row -->
 
-            <div class="team">
+            <div class="team team__right">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/syed.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/syed.jpeg" alt="Sayeed Ansari">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/sayeedansari">
                                 <i class="fa fa-linkedin">
@@ -494,18 +424,14 @@
             </div>
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/zeel.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/zeel.jpeg" alt="Zeel Shah">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://www.facebook.com/zeel.shah.77770194">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
-                            <a target="_blank" href="https://www.facebook.com/zeel.shah.77770194/">
+                            <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
                                 </i>
                             </a>
@@ -524,16 +450,13 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/satyam.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/satyam.jpeg" alt="Satyam Kumar">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://www.facebook.com/satyamismyname">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/satyam-kumar-701722175">
                                 <i class="fa fa-linkedin">
@@ -554,16 +477,12 @@
             </div>
             <!-- /team -->
             <!-- /Row -->
-            <div class="team">
+            <div class="team team__right">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/prasoon.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/prasoon.jpeg" alt="Prasoon Saurav">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://www.facebook.com/prasoon.rajput.35">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                          
                             <!-- Linkedin -->
                             <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
@@ -590,16 +509,12 @@
             <!-- Section header -->
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/aman.jpg" alt="">
+                    <img class="img-responsive" src="images/team/aman.jpg" alt="Aman Gupta">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/aman-gupta-56394215a/">
                                 <i class="fa fa-linkedin">
@@ -620,16 +535,12 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                     <div class="team-img">
-                        <img class="img-responsive" src="img/nandawat.jpeg" alt="">
+                        <img class="img-responsive" src="images/team/nandawat.jpeg" alt="Aditya Singh Nandawat">
                         <div class="overlay">
                             <div class="team-social">
-                                <!-- facebook -->
-                                <a target="_blank" href="https://www.facebook.com/aditya.nandawat.9">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
+                               
                                 <!-- Linkedin -->
                                 <a target="_blank" href="http://linkedin.com/in/aditya-singh-nandawat-36176217b">
                                     <i class="fa fa-linkedin">
@@ -650,16 +561,12 @@
                 </div>
             <!-- /team -->
             <!-- /Row -->
-            <div class="team">
+            <div class="team team__right">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/navya.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/navya.jpeg" alt="Navya Bansal">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href=" https://www.linkedin.com/in/navya-bansal-20381516a">
                                 <i class="fa fa-linkedin">
@@ -688,16 +595,12 @@
             <!-- /team -->
             <!-- team -->
 
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/sreeja.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/sreeja.jpeg" alt="P Seerja">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
@@ -720,16 +623,12 @@
             <!-- /team -->
             <!-- team -->
 
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/sarthak.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/sarthak.jpeg" alt="Sarthak Shandilya">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
@@ -751,16 +650,12 @@
 
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__right">
                     <div class="team-img">
-                        <img class="img-responsive" src="img/aakash.jpeg" alt="">
+                        <img class="img-responsive" src="images/team/aakash.jpeg" alt="Pushparaj Gupta">
                         <div class="overlay">
                             <div class="team-social">
-                                <!-- facebook -->
-                                <a target="_blank" href="https://www.facebook.com/chocklate2">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
+                               
                                 <!-- Linkedin -->
                                 <a target="_blank" href="#">
                                     <i class="fa fa-linkedin">
@@ -790,16 +685,12 @@
         <div class="container1">
             <!-- Row -->
             <!-- Section header -->
-            <div class="team">
+            <div class="team team__left">
                     <div class="team-img">
-                        <img class="img-responsive" src="img/karn.jpeg" alt="">
+                        <img class="img-responsive" src="images/team/karn.jpeg" alt="Karn Hooper">
                         <div class="overlay">
                             <div class="team-social">
-                                <!-- facebook -->
-                                <a target="_blank" href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
+                              
                                 <!-- Linkedin -->
                                 <a target="_blank" href="https://www.linkedin.com/in/karn-hooper-4309a5176">
                                     <i class="fa fa-linkedin">
@@ -825,16 +716,12 @@
            
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/harsh.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/harsh.jpeg" alt="Harsh Tiwari">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://m.facebook.com/harshtiwarivm2000?ref=bookmarks">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
@@ -853,16 +740,12 @@
                     </span>
                 </div>
             </div>
-            <div class="team">
+            <div class="team team__right">
                     <div class="team-img">
-                        <img class="img-responsive" src="img/shikhar.jpeg" alt="">
+                        <img class="img-responsive" src="images/team/shikhar.jpeg" alt="Shikhar Sinha">
                         <div class="overlay">
                             <div class="team-social">
-                                <!-- facebook -->
-                                <a target="_blank" href="https://m.facebook.com/shikhar.sinha.794">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
+                                
                                 <!-- Linkedin -->
                                 <a target="_blank" href="#">
                                     <i class="fa fa-linkedin">
@@ -893,16 +776,12 @@
 
             <!-- /Section header -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__left">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/chirayu.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/chirayu.jpeg" alt="Chirayu">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://www.facebook.com/chirayu.sanghvi.1?ref=bookmarks">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                           
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/chirayu-sanghvi-44629418a/">
                                 <i class="fa fa-linkedin">
@@ -923,17 +802,12 @@
             </div>
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/vedansh.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/vedansh.jpeg" alt="Vedansh Tora">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank"
-                                href="https://m.facebook.com/vedanshtora?ref_component=mbasic_home_header&ref_page=MChatBuddyListController">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                            
                             <!-- Linkedin -->
                             <a target="_blank" href="#">
                                 <i class="fa fa-linkedin">
@@ -952,16 +826,12 @@
                     </span>
                 </div>
             </div>
-            <div class="team">
+            <div class="team team__right">
                     <div class="team-img">
-                        <img class="img-responsive" src="img/vinay.jpeg" alt="">
+                        <img class="img-responsive" src="images/team/vinay.jpeg" alt="Vinay Biradar">
                         <div class="overlay">
                             <div class="team-social">
-                                <!-- facebook -->
-                                <a target="_blank" href="https://m.facebook.com/vinay.biradar.1675">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
+                              
                                 <!-- Linkedin -->
                                 <a target="_blank" href="https://www.linkedin.com/in/vinay-biradar-781145179">
                                     <i class="fa fa-linkedin">
@@ -995,16 +865,12 @@
             
             <!-- /team -->
             <!-- team -->
-            <div class="team">
+            <div class="team team__middle">
                 <div class="team-img">
-                    <img class="img-responsive" src="img/tilak.jpeg" alt="">
+                    <img class="img-responsive" src="images/team/tilak.jpeg" alt="Tilak Singh">
                     <div class="overlay">
                         <div class="team-social">
-                            <!-- facebook -->
-                            <a target="_blank" href="https://m.facebook.com/tilak.singh2?ref=bookmarks">
-                                <i class="fa fa-facebook">
-                                </i>
-                            </a>
+                         
                             <!-- Linkedin -->
                             <a target="_blank" href="https://www.linkedin.com/in/tilak-singh-876bb6147">
                                 <i class="fa fa-linkedin">
@@ -1029,42 +895,10 @@
     </div>
     <!-- End Members -->
     <!-- Footer -->
-    <footer class="footer" style="background: white;">
-        <!-- Your Company Name -->
-        <h2 class="company-name condensed uppercase white bold">The Entrepreneurship Development Center</h2>
-        <!-- Copyright -->
-        <p class="copyright normal" style="text-align: center;">© 2019-20 All Rights Reserved. Made with <i
-                class="fas fa-heart" style="color: red"></i> by EDC Web team.</p>
-    </footer>
+    <%- include('partials/footer') %>
 
-
-    <!-- JS Files -->
-
-    <!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <!-- <script type="text/javascript" src="js/waypoints.min.js"></script> -->
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <!-- <script type="text/javascript" src="js/modernizr-latest.js"></script> -->
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.superslides.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="js/jquery.slabtext.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/myscroll.js"></script>
-
-    <!-- Theme Panel JS -->
-    <script type="text/javascript" src="theme-panel/theme-panel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
-
+    <!--Local JS-->
+    <script src="js/team.js"></script>
     <!-- End JS Files -->
 </body>
 
