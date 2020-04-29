@@ -3,21 +3,22 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
- 
- body {
+html {
   overflow-x: hidden;
-  background: radial-gradient(#2c2c2c,#0f0f0f);
+}
+body {
+  overflow-x: hidden;
+  background: radial-gradient(#2c2c2c, #0f0f0f);
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color:#ffffff;
+  color: #ffffff;
   font-family: Raleway;
 }
 
 p {
   line-height: 1.75;
 }
-
 
 .text-primary {
   color: #3ccefa !important;
@@ -95,10 +96,9 @@ img::-moz-selection {
 .btn-primary {
   background-color: transparent;
   border-color: #3ccefa;
- 
 }
 
-.ghost-button{
+.ghost-button {
   display: inline-block;
   background: transparent;
   text-transform: uppercase;
@@ -108,23 +108,29 @@ img::-moz-selection {
   color: #3eb8ddd3;
   border-radius: 0;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   padding: 18px 80px 20px;
   transition: all 0.5s ease-out;
-  background: linear-gradient(270deg, #3eb8ddf8, #1a3e49f8, rgba(34,34,34,0), rgba(34,34,34,0));
+  background: linear-gradient(
+    270deg,
+    #3eb8ddf8,
+    #1a3e49f8,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0)
+  );
   background-position: 1% 50%;
   background-size: 300% 300%;
   text-decoration: none;
   margin: 0.625rem;
   border: none;
   border: 1px solid #3eb8ddd3;
-  text-decoration: none !important;  
+  text-decoration: none !important;
 }
 
-.ghost-button:hover{
+.ghost-button:hover {
   color: #fff;
-  border: 1px solid rgba(223,190,106,0);
+  border: 1px solid rgba(223, 190, 106, 0);
   color: white;
   background-position: 99% 50%;
 }
@@ -132,7 +138,7 @@ img::-moz-selection {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-  opacity:1;
+  opacity: 1;
   background-color: #3ccefa !important;
   border-color: #3ccefa !important;
   color: white;
@@ -144,53 +150,83 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem #204c5a !important;
 }
 
-  
-  .section-heading{
-    font-family: Expletus Sans;
-    font-size: 100px; 
-    padding-top: 130px;
-    padding-bottom:40px;
-    margin-bottom: 0;
-    backdrop-filter: grayscale(1) brightness(25%);
+.section-heading {
+  font-family: Expletus Sans;
+  font-size: 100px;
+  padding-top: 130px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+  backdrop-filter: grayscale(1) brightness(25%);
+}
+
+.img-fluid {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+@media (max-width: 450px) {
+  .img-fluid {
+    height: 200px;
+    width: 200px;
+    max-width: none;
+  }
+}
+
+.image-right {
+  text-align: right;
+}
+
+.image-left {
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .image-right,
+  .image-left {
+    text-align: center;
+  }
+}
+.display-4 {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .image-right {
+    text-align: center;
   }
 
-  .img-fluid{
-    border-radius: 50%;
-    height:300px;
-    width:300px;
+  .image-left {
+    text-align: center;
   }
+}
 
-  .image-right{
-    text-align: right;
+@media screen and (max-width: 600px) {
+  .section-heading {
+    font-size: 75px;
   }
+}
 
-  .image-left{
-    text-align: left;
+@media screen and (max-width: 470px) {
+  .section-heading {
+    font-size: 40px;
+    padding-top: 80px;
   }
-  .display-4{
-    margin-bottom: 30px;
+  .px-5 {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
-
-
-  @media screen and (max-width:992px){
-    
-    .image-right{
-      text-align: center;
-    }
-
-    .image-left{
-      text-align: center;
-    }
+  .p-5:first-child {
+    padding-top: 30px !important;
   }
-  
-  @media screen and (max-width:600px){
-    .section-heading{
-      font-size: 75px !important;
-    }
+  .last {
+    margin-bottom: 40px !important;
   }
-
-  @media screen and (max-width:470px){
-    .container-fluid{
-      width:430px;
-    }
+  .p-5 {
+    padding: 10px !important;
   }
+  .display-4 {
+    font-size: 28px !important;
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
