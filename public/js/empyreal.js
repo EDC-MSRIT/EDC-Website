@@ -5,20 +5,60 @@ let slideFromRight = {
     distance: '50%',
     opacity: 0,
     duration: 1000,
-    easing: 'ease'
+    easing: 'ease',
+    delay: 600
 }
+ScrollReveal().reveal('.slide-enter-right', slideFromRight);
 
-ScrollReveal().reveal('.slide-enter', slideFromRight);
+let slideFromRight2 = {
+  origin: 'right',
+  distance: '50%',
+  opacity: 0,
+  duration: 1000,
+  easing: 'ease',
+  delay: 800
+}
+ScrollReveal().reveal('.slide-enter-right2', slideFromRight2);
 
 let slideFromBottom = {
     origin: 'bottom',
     distance: '50%',
     opacity: 0,
     duration: 1000,
-    easing: 'ease'
+    easing: 'ease',
+    delay: 400
 }
-
 ScrollReveal().reveal('.slide-enter-bottom', slideFromBottom);
+
+let slideFromBottom2 = {
+  origin: 'bottom',
+  distance: '50%',
+  opacity: 0,
+  duration: 1000,
+  easing: 'ease',
+  delay: 1000
+}
+ScrollReveal().reveal('.slide-enter-bottom2', slideFromBottom2);
+
+let slideFromLeft = {
+  origin: 'left',
+  distance: '50%',
+  opacity: 0,
+  duration: 1000,
+  easing: 'ease',
+  delay: 1000
+}
+ScrollReveal().reveal('.slide-enter-left', slideFromLeft);
+
+let slideFromLeft2 = {
+  origin: 'left',
+  distance: '50%',
+  opacity: 0,
+  duration: 1000,
+  easing: 'ease',
+  delay: 400
+}
+ScrollReveal().reveal('.slide-enter-left2', slideFromLeft2);
 
 
 //header animations start-----------------------------------------------------------

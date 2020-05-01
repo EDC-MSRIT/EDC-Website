@@ -309,7 +309,7 @@ section{
     position: absolute;
     width: 400px;
     height: auto;
-    filter: brightness(175%);
+    filter: brightness(125%);
 }
 
 .e-fiesta-events-swiper-container .swiper-slide .event-image img{
@@ -358,5 +358,14 @@ section{
     width: 300px;
     margin-top: 0;
     margin-bottom: 0;
+    }
+
+    .e-fiesta-events-swiper-container{
+        width: 300px;
+        height: 300px;   
+    }
+    
+    .e-fiesta-events-swiper-container .swiper-slide .event-image{
+        width: 300px;
     }
 }
