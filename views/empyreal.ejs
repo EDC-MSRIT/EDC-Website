@@ -25,8 +25,11 @@
   <title>Empyreal</title>
 </head>
 
-<body data-spy="scroll" data-target="#collapsibleNavbar">
+<body data-spy="scroll" data-target="#collapsibleNavbar" onload="onLoadComplete()">
 
+  <div id='preloader' style="z-index: 7;">
+    <%- include('partials/preloader.ejs') %>
+  </div>
 
   <!-- Animated Header -->
 
@@ -1007,6 +1010,14 @@
   <!-- Custom JS -->
   <script src="js/empyreal.js"></script>
 
+  <script>
+    let preloader = document.getElementById('preloader');
+
+    function onLoadComplete(){
+      preloader.style.display = 'none';
+    }
+
+  </script>
 
 </body>
 
