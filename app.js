@@ -29,6 +29,14 @@ app.get("/startup",function(req,res){
     res.render("startup");
 });
 
+app.get('/empyreal',(req,res)=>{
+    res.render('empyreal');
+})
+
+app.get('/preloader',(req,res)=>{
+    res.render('partials/preloader');
+})
+
 app.post("/",function(req,res){
 
     var name=req.body.name;

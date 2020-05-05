@@ -20,28 +20,33 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <!--ScrollReveal.js CDN-->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+      ScrollReveal.debug = true;
+  </script>
   <!-- Custom styles for this template -->
-  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/landing.css" rel="stylesheet">
+  <link href="css/scrollbar.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/edclogoweb1.png" width="50" height="50" alt="edc logo">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      
+      <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
+        <ul class="navbar-nav text-uppercase mx-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
           </li>
@@ -67,22 +72,14 @@
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container head-back">
-      <img src="img/edclogoweb1.png" class="image" width="200" height="250" alt="edc logo">
-      <div class="intro-text">
-        <div class="intro-heading text-uppercase">Entrepreneurship development centre</div>
-        <div class="intro-heading-2 text-uppercase"><b>RAMAIAH INSTITUTE OF TECHNOLOGY</b></div>
-        <br>
-        <div class="intro-lead-in" style="color: rgb(42, 95, 241);">" Making Leaders Of Today! "</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Know More</a>
-      </div>
-    </div>
   </header>
-
+  <div class="masthead-content">
+    <img src="images/logos/EDC.png" class="image mb-0"  alt="edc logo">
+  </div>
   <!-- About -->
   <section class="page-section" id="about">
-    <div class="container">
-      <h1 class="about-text" style="color: rgb(127, 71, 117);">ENTREPRENEURSHIP DEVELOPMENT CELL & CENTRE FOR ADVANCED
+    <div class="about-wrapper">
+      <h1 class="about-text text-center text-primary" style="font-family: 'Expletus Sans', cursive; font-weight: 900;">ENTREPRENEURSHIP DEVELOPMENT CELL & CENTRE FOR ADVANCED
         TRAINING & CONTINUING EDUCATION
       </h1>
       <br>
@@ -100,28 +97,28 @@
           Entrepreneurship Development Centre also actively incubates start-up ideas by creating the required ecosystem to be an entrepreneur.
       </p>
       <br>
-      <h3 class="about-text" style="color: rgb(127, 71, 117);">VISION</h3>
+      <h3 class="about-text" style="color:#2584a1;font-family: 'Expletus Sans', cursive; font-weight: 900;">VISION</h3>
       <p class="about-text">
         To provide and sustain entrepreneurial activities to foster startup culture and strive to implement
         environmental, social and economic solutions.
       </p>
       <br>
-      <h3 class="about-text" style="color: rgb(127, 71, 117);">MISSIONS</h3>
+      <h3 class="about-text" style="color:#2584a1;font-family: 'Expletus Sans', cursive; font-weight: 900;">MISSIONS</h3>
       <p>
-        <ul>
-          <li>To generate new and innovative ideas.</li>
-          <li>To organize entrepreneurial Conclaves/Ideathon/Hackthon/Competitions.</li>
-          <li>To convert innovative ideas into tangible products and solutions.</li>
-          <li>To encourage start-ups and its ecosystem.</li>
+        <ul style="list-style-type: none;">
+          <li class="about-text mt-3">To generate new and innovative ideas.</li>
+          <li class="about-text text-wrap mt-3">To organize entrepreneurial Conclaves / Ideathon / Hackthon / Competitions.</li>
+          <li class="about-text mt-3">To convert innovative ideas into tangible products and solutions.</li>
+          <li class="about-text mt-3">To encourage start-ups and its ecosystem.</li>
         </ul>
       </p>
       <br>
-      <h3 class="about-text" style="color: rgb(127, 71, 117);">CORE VALUES</h3>
+      <h3 class="about-text" style="color:#2584a1;font-family: 'Expletus Sans', cursive; font-weight: 900;">CORE VALUES</h3>
       <p>
-        <ul>
-          <li>To identify creative students and inspire them with an innovative ecosystem which provides professional
+        <ul style="list-style-type: none; width:70%">
+          <li class="about-text mt-2">To identify creative students and inspire them with an innovative ecosystem which provides professional
             and ethical inputs to become successful entrepreneurs.</li>
-          <li>To enable students to follow the path of enterprise with commitment to service.</li>
+          <li class="about-text mt-3">To enable students to follow the path of enterprise with commitment to service.</li>
         </ul>
       </p>
     </div>
@@ -129,37 +126,40 @@
 
   <!-- Portfolio Grid -->
   <section class="bg-light page-section" id="portfolio">
-    <div class="container">
+    <div class="portfolio-wrapper">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase" style="color: rgb(127, 71, 117);">EVENTS</h2>
+        <h2 class="section-heading text-uppercase text-primary" style="font-family: 'Expletus Sans', cursive;">EVENTS</h2>
 
-        <div class="bs-example">
+        <div class="bs-example mt-5 mb-5">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img\o1copy.jpeg" height="500px" width="1080px" alt="First Slide">
+                <img src="images\landingEvents\o1.jpeg" height="500px" width="1080px" alt="First Slide">
               </div>
               <div class="carousel-item">
-                <img src="img\o3.jpeg" height="500px" width="1080px" alt="Second Slide">
+                <img src="images\landingEvents\o3.jpeg" height="500px" width="1080px" alt="Second Slide">
               </div>
               <div class="carousel-item">
-                <img src="img\o2.jpeg" height="500px" width="1080px" alt="Third Slide">
+                <img src="images\landingEvents\o2.jpeg" height="500px" width="1080px" alt="Third Slide">
               </div>
               <div class="carousel-item">
-                <img src="img\o4.jpeg" height="500px" width="1080px" alt="Third Slide">
+                <img src="images\landingEvents\o4.jpeg" height="500px" width="1080px" alt="Third Slide">
               </div>
               <div class="carousel-item">
-                <img src="img\o6.jpeg" height="500px" width="1080px" alt="Third Slide">
+                <img src="images\landingEvents\o6.jpeg" height="500px" width="1080px" alt="Third Slide">
               </div>
               <div class="carousel-item">
-                <img src="img\o5.jpeg" height="500px" width="1080px" alt="Third Slide">
+                <img src="images\landingEvents\o5.jpeg" height="500px" width="1080px" alt="Third Slide">
               </div>
             </div>
             <!-- Carousel controls -->
@@ -171,7 +171,7 @@
             </a>
           </div>
         </div>
-        <h3><a class="btn btn-primary btn-xl text-uppercase" href="\eventCalender">
+        <h3><a class="ghost-button" href="\eventCalender">
             Event Calender
           </a></h3>
       </div>
@@ -182,31 +182,44 @@
   <section class="page-section" id="services">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase" style="color: rgb(127, 71, 117);">STARTUPS</h2>
+        <div class="col-lg-12 text-center mb-3">
+          <h2 class="section-heading text-uppercase text-primary" style="font-family: 'Expletus Sans', cursive; font-weight: 900;">STARTUPS</h2>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <img class="mx-auto rounded-circle" src="img\e-drive.png" style="height: 200px ;" alt="startup1">
-          <h4 class="service-heading">E-Drive</h4>
-         <p class="text-muted"></p> 
+      <div class="row text-center mt-3 logo-row">
+        <div class="col-md-4 col-sm-10 offset-sm-1 offset-md-0 mb-0">
+          <img class=" mx-auto startup-logo logo-1" src="images\startups\e-drive.png"   alt="startup1">
+          
         </div>
         
-        <div class="col-md-4">
-          <img class="mx-auto rounded-circle" src="img\adcom12.png" style="height:200px;" alt="startup1">
-          <h4 class="service-heading">@Dcom</h4>
-          <p class="text-muted"></p>
+        <div class=" col-md-4 col-sm-10 offset-sm-1 offset-md-0 mb-0">
+          <img class="mx-auto startup-logo logo-2" src="images\startups\adcom12.png"  alt="startup2">
+          
         </div>
 
-        <div class="col-md-4">
-            <img class="mx-auto rounded-circle" src="img\aidapp.png" style="height:200px;" alt="startup1">
+        <div class="  col-md-4 col-sm-10 offset-sm-1 offset-md-0 mb-0">
+            <img class="mx-auto startup-logo logo-3" src="images\startups\aidapp.png" alt="startup3">
+            
+          </div>
+      </div>
+      <div class="row text-center">
+        <div class=" col-md-4 col-sm-10 offset-sm-1 offset-md-0  mb-5">
+          <h4 class="service-heading">E-Drive</h4>
+         
+        </div>
+        
+        <div class=" col-md-4 col-sm-10 offset-sm-1 offset-md-0 mb-5 ">
+          <h4 class="service-heading">@Dcom</h4>
+       
+        </div>
+
+        <div class="  col-md-4 col-sm-10 offset-sm-1 offset-md-0 mb-5">
             <h4 class="service-heading">Aidapp</h4>
-            <p class="text-muted"></p>
+            
           </div>
       </div>
       <div class=" text-center">
-        <h3><a class="btn btn-primary btn-xl text-uppercase" href="/startup">
+        <h3><a class="ghost-button" href="/startup">
             More Startups
           </a></h3>
       </div>
@@ -215,28 +228,25 @@
 
 
   <!-- Team -->
-  <section class="bg-light page-section" id="team">
-    <div class="container">
+  <section class="page-section" id="team">
+    <div class="team-wrapper">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase" style="color: rgb(127, 71, 117);">Our Amazing Team</h2>
+          <h2 class="section-heading text-uppercase text-primary" style="font-family: 'Expletus Sans', cursive; font-weight: 900;">Our Amazing Team</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/principal.jpg" alt="">
+            <img class="mx-auto rounded-circle" src="images/team/principal.jpg" alt="">
             <h4>Dr. N.V.R NAIDU</h4>
             <p class="text-muted">Principal<br>Ramaiah Institute of Technology</p>
-          
-
-
           </div>
         </div>
         <div class="col-sm-6">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/chethan1.jpeg" alt="">
+            <img class="mx-auto rounded-circle" src="images/team/chethan.jpeg" alt="">
             <h4>Dr. C.S. Chethan Kumar</h4>
             <p class="text-muted">
 
@@ -266,7 +276,7 @@
         </div>
       </div>
       <div class=" text-center">
-        <h3><a class="btn btn-primary btn-xl text-uppercase" href="/team">
+        <h3><a class="ghost-button" href="/team">
             See More
           </a></h3>
       </div>
@@ -274,16 +284,16 @@
   </section>
 
   <!-- Contact -->
-  <section class="page-section" id="contact">
+  <section class="page-section pb-5  " id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h1 class="section-heading text-uppercase ">GET IN TOUCH</h1>
+          <h1 class="section-heading text-uppercase text-primary" style="font-family: 'Expletus Sans', cursive;">GET IN TOUCH</h1>
           <h3 class="section-subheading" style="color:#e9ebf0;">Feel free to contact us in case of any query</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <form id="contactForm" method="post" action="/" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-sm-6">
@@ -316,41 +326,44 @@
             <div class="form-group">
               <div class="col-lg-12 text-center">
                 <div id="success">
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>   
+                  <button id="sendMessageButton" class="ghost-button" type="submit">Send Message</button>   
                 </div>
               </div>
             </div>
         </div>
         </form>
-        <div class="col-sm-6">
-          <ul class="address" style="color: white">
-            <span style="color: skyblue;"><i class="fas fa-home" style="color: skyblue;"></i> Address: <br>
-              <ul style="color: skyblue ;">ESB-311</ul>
-              <ul style="color: skyblue ;">Engineering science block</ul>        
-              <ul style="color: skyblue ;">Ramaiah Institute of Technology</ul>
-              <ul style="color: skyblue ;">MSR nagar ,Mathikere, Bengaluru</ul>
-               </span>
-            <span style="color: skyblue;"><i class="fas fa-mobile-alt" style="color: skyblue;"></i> Phone: <br>
-              <ul style="color: skyblue;">+91-8826394813 </ul>
-              <ul style="color: skyblue;">+91-7406469791</ul>
-            </span>
-            <span style="color: skyblue;"><i class="fas fa-envelope" style="color: skyblue;"></i> Email:  edc@msrit.edu</span></li><br>
-            <span style="color: skyblue;"><i class="fas fa-globe-americas" style="color: skyblue;"></i>Website:  edc-msrit.edu</span>
-            </li><br>
-            <p><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0818133942835!2d77.56249751408438!3d13.030461890817293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17dedd4dcca9%3A0x6075bd8d8aed97ab!2sRamaiah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1568286825621!5m2!1sen!2sin"
-                width="200" height="200" frameborder="0" style="border:0; margin-left: 40px; margin-top: 20px;"
-                allowfullscreen=""></iframe></p>
-          </ul>
-          <div class="row" style="text-align: center;">
+        <div class="col-md-6">
+          
 
-            <a style="margin-top: 30px; margin-left: 80px;font-size: 50px " href="https://www.facebook.com/EDCMSRIT/"
+            <ul class="address p-0 pl-5 " style="color: white; " >
+              <span style="color: skyblue;"><i class="fas fa-home" style="color: skyblue;"></i> Address: <br>
+                <ul  style="color: skyblue ;">ESB-311</ul>
+                <ul  style="color: skyblue ;">Engineering science block</ul>        
+                <ul  style="color: skyblue ;">Ramaiah Institute of Technology</ul>
+                <ul  style="color: skyblue ;">MSR nagar ,Mathikere, Bengaluru</ul>
+              </span>
+              <span style="color: skyblue;"><i class="fas fa-mobile-alt" style="color: skyblue;"></i> Phone: <br>
+                <ul  style="color: skyblue;">+91-8826394813 </ul>
+                <ul  style="color: skyblue;">+91-7406469791</ul>
+              </span>
+              <span style="color: skyblue;"><i class="fas fa-envelope" style="color: skyblue;"></i> Email:  edc@msrit.edu</span></li><br>
+              <span style="color: skyblue;"><i class="fas fa-globe-americas" style="color: skyblue;"></i>Website:  edc-msrit.edu</span>
+            </li><br>
+            
+            <p class="pt-4 "><iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0818133942835!2d77.56249751408438!3d13.030461890817293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17dedd4dcca9%3A0x6075bd8d8aed97ab!2sRamaiah%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1568286825621!5m2!1sen!2sin"
+              width="200" height="200" frameborder="0" style="border:0; "
+              allowfullscreen=""></iframe></p>
+            </ul>
+          <div class="row d-flex justify-content-around m-2 mt-4 " style="text-align: center;">
+
+            <a style="font-size: 50px " href="https://www.facebook.com/EDCMSRIT/"
               target="_blank" data-wow-delay="0.3s"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>
-            <a style="margin-top: 30px; margin-left: 50px;font-size: 50px " href="https://instagram.com/edcrit_?igshid=b8wgoyphj8f3"
-              target="_blank" data-wow-delay="0.3s"><i class="fab fa-instagram" style="color: rgb(221,42,123);"></i></a>
-            <a style="margin-top: 30px; margin-left: 50px;font-size: 50px " href="@"
+            <a style="font-size: 50px " href="https://instagram.com/edcrit_?igshid=b8wgoyphj8f3"
+              target="_blank" data-wow-delay="0.3s"><i class="fab fa-instagram" style="color: rgb(221,42,123)"></i></a>
+            <a style="font-size: 50px " href="@"
               target="_blank" data-wow-delay="0.3s"><i class="fab fa-youtube" style="color: #c4302b;"></i></a>
-            <a style="margin-top: 30px; margin-left: 50px;font-size: 50px " href="http://linkedin.com/in/edcrit"
+            <a style="font-size: 50px " href="http://linkedin.com/in/edcrit"
               target="_blank" data-wow-delay="0.3s"><i class="fab fa-linkedin-in" style="color: #0e76a8;"></i></a>
           </div>
 
@@ -359,14 +372,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <!-- Your Company Name -->
-    <h2 class="company-name condensed uppercase white bold">The Entrepreneurship Development Centre</h2>
-    <!-- Copyright -->
-    <p class="copyright normal" style="text-align: center;">© 2019-20 All Rights Reserved. Made with <i
-        class="fas fa-heart" style="color: red"></i> by EDC Web team.</p>
-  </footer>
-
+  <%- include('partials/footer') %>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -380,7 +386,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
-
+  <script src="js/landing.js"></script>
 </body>
 
 </html>
