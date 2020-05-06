@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 
-body {
+body{
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
   color: #505962;
-  background: radial-gradient(#2c2c2c,#1f1e1e, #000000) !important;
+  background: radial-gradient(#2c2c2c,#1f1e1e, #000000);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100vw;
+  z-index: -1;
 }
 
 .main-page-wrapper{
@@ -195,23 +197,6 @@ section {
   overflow: hidden;
 }
 
-.section {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 600px;
-  object-fit: fill;
-  overflow: hidden;
-}
-
-.carousel {
-  overflow: hidden;
-}
-
 .delay-navbar {
   z-index: 3;
   position: relative;
@@ -230,6 +215,7 @@ section {
   align-content: center;
   text-align: center;
   align-items: center;
+  margin: 0;
 }
 
 .e-fiesta {

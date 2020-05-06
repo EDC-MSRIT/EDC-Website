@@ -3,7 +3,7 @@ function prealoader() {
   if ($('#preloader').length) {
       $('#preloader').delay(10).fadeOut('slow'); // will first fade out the loading animation
       $('#loader-wrapper').delay(15).fadeOut('slow'); // will fade out the white DIV that covers the website.
-      $('body').delay(350).css({'overflow': 'visible'});
+      $('body').delay(350).css({'overflow-y': 'visible'});
   }
 }
 
