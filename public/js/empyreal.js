@@ -1,3 +1,19 @@
+// Prealoder---------------------------------------------------------------------------------------------------------------------------------
+function prealoader() {
+  if ($('#preloader').length) {
+      $('#preloader').delay(10).fadeOut('slow'); // will first fade out the loading animation
+      $('#loader-wrapper').delay(15).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow': 'visible'});
+  }
+}
+
+// Window load function
+jQuery(window).on('load', function () {
+  (function ($) {
+      prealoader();
+  })(jQuery);
+});
+
 //ScrollReveal Animations here --------------------------------------------------------------------------------------------------------------
 
 let slideFromRight = {
@@ -46,7 +62,7 @@ let slideFromLeft = {
   opacity: 0,
   duration: 1000,
   easing: 'ease',
-  delay: 1000
+  delay: 300
 }
 ScrollReveal().reveal('.slide-enter-left', slideFromLeft);
 

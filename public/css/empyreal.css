@@ -10,6 +10,13 @@ body {
   box-sizing: border-box;
 }
 
+.main-page-wrapper{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #previousBtn {
   position: absolute;
   top: 50%;
@@ -75,10 +82,15 @@ body {
   background-position: 99% 50%;
 }
 
-.card-description-text {
+.card-description-text{
   font-family: Raleway;
   letter-spacing: 2px;
   word-spacing: 4px;
+  font-size: 20px;
+}
+
+.card-description-text p {
+  margin-bottom: 0;
   color: white;
 }
 
@@ -86,6 +98,8 @@ body {
   font-family: Expletus Sans;
   font-weight: bold;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .vertically-center {
@@ -222,20 +236,6 @@ section {
   position: relative;
 }
 
-.e-fiesta::before {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  content: " ";
-  background-image: url("../images/backgrounds/section-background.gif");
-  filter: grayscale(1) brightness(25%);
-}
-
 .section-description {
   display: flex;
   flex-direction: column;
@@ -302,25 +302,7 @@ section {
   padding: 20px;
 }
 
-.card-heading-text {
-  font-family: Expletus Sans;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.card-description-text {
-  font-family: Raleway;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-}
-
 .swiper-slide .speaker-description p {
-  margin-bottom: 0;
-}
-
-.card-description-text p {
   margin-bottom: 0;
 }
 
@@ -395,4 +377,44 @@ section {
   .e-fiesta-events-swiper-container .swiper-slide .event-image {
     width: 300px;
   }
+}
+
+.e-summit{
+  position: relative;
+}
+
+.e-summit::before{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  background-image: url("../images/backgrounds/section-background.gif");
+  filter: grayscale(1) brightness(25%);
+}
+
+.my-story-session{
+  position: relative;
+}
+
+.my-story-session::before{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  content: " ";
+  background-image: url("../images/backgrounds/section-background.gif");
+  filter: grayscale(1) brightness(25%);
+}
+
+.card-body p{
+  margin: 0;
 }

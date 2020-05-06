@@ -27,1040 +27,1066 @@
   <title>Empyreal</title>
 </head>
 
-<body data-spy="scroll" data-target="#collapsibleNavbar" onload="onLoadComplete()">
+<body data-spy="scroll" data-target="#collapsibleNavbar">
 
-   <!-- Preloader Starts-->
+  <!-- Preloader Starts-->
 
-  <div id='preloader'>
-    <%- include('partials/preloader.ejs') %>
+  <div id='loader-wrapper'>
+    <div id='preloader'>
+      <%- include('partials/preloader.ejs') %>
+    </div>
   </div>
 
-   <!-- Preloader ends-->
+  <!-- Preloader ends-->
 
-  <!-- Animated Header Starts-->
 
-  <header>
+  <div class="main-page-wrapper">
 
-    <!-- Navigation -->
-    <nav class="delay-navbar">
-      <%- include('partials/navbar.ejs') %>
-    </nav>
-    <!--Navigation ends-->
+    <!-- Animated Header Starts-->
 
-    <section>
-      <div class="hero">
-        <video autoplay muted loop id="myVideo">
-          <source src="videos/header.mp4" type="video/mp4">
-        </video>
-        <h1 class="headline">
-          <img src="images/logos/empyreal2020_logo.png" alt="">
-        </h1>
+    <header>
+
+      <!-- Navigation -->
+      <nav class="delay-navbar">
+        <%- include('partials/navbar.ejs') %>
+      </nav>
+      <!--Navigation ends-->
+
+      <section>
+        <div class="hero">
+          <video autoplay muted loop id="myVideo">
+            <source src="videos/header.mp4" type="video/mp4">
+          </video>
+          <h1 class="headline">
+            <img src="images/logos/empyreal2020_logo.png" alt="">
+          </h1>
+        </div>
+
+      </section>
+      s
+      <div class="slider"></div>
+    </header>
+
+    <!--Animated Header ends-->
+
+    <!--About Empyreal Starts-->
+
+    <div class="section-container">
+
+      <div class="section-description">
+        <h2 class="slide-enter-bottom ">
+          About Empyreal
+        </h2>
+        <p class="slide-enter-bottom">
+          Empyreal is the flagship event of E-Cell RIT that celebrates the spirit of entrepreneurship.
+        </p>
+        <p class="slide-enter-bottom">
+          This entrepreneurial festival aims to foster the zeal of entrepreneurship not only among
+          the students of Ramaiah Institute of Technology but also the external
+          participants from other colleges.
+        </p>
+        <p class="slide-enter-bottom">
+          It brings together the academic community, venture capitalists, new age entrepreneurs and all
+          those passionate about entrepreneurship to common grounds. It provides an avenue to exhibit
+          the talent and creativity through many events broadly divided in two
+          categories : E-summit and E-fiesta.
+        </p>
       </div>
 
-    </section>
-s
-    <div class="slider"></div>
-  </header>
-
-  <!--Animated Header ends-->
-
-
-  <!-- E-Summit Starts  -->
-
-  <div class="section-container">
-
-    <div class="section-description">
-      <h2 class="slide-enter-bottom ">
-        E Summit
-      </h2>
-      <p class="slide-enter-bottom ">
-        Empyreal is an entrepreneurial fest, but we dont miss the fun! The events held under
-        'E- Fiesta' are all about fun and interesting games.
-      </p>
     </div>
 
-    <div class='event-card-container mx-auto' style="max-width: 65vw; width: 80%;">
+    <!--About Empyreal Ends-->
 
-      <div class="event-card-right mb-5 ghost-card slide-enter-right">
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/b_plan/01.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/02.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/03.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/04.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/05.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/06.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/07.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/08.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/09.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/10.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/11.JPG" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">B-PLAN</h3>
-            <p class="card-description-size">B-Plan is business plan. In B-plan the
-              wannabe entrepreneurs pitch their business ideas and according to their
-              innovation and business plan, the participants are evaluated. Each team consists
-              of 4 members who presented their ideas to the judges. Every team was provided
-              with 7+2 minutes to pitch their ideas to the judges. We had a very good panel of esteemed judges Mr.
-              Chirag
-              Kashyap, Mr. Jagat Iyer
-              and Mr. Hardik Shah.</p>
-          </div>
-        </div>
+    <!-- E-Summit Starts  -->
+
+    <div class="section-container e-summit">
+
+      <div class="section-description">
+        <h2 class="slide-enter-bottom ">
+          E-Summit
+        </h2>
+        <p class="slide-enter-bottom ">
+          E-Summit is a collection of events that are to plant the seeds of entrepreneurship in
+          young minds and help these potential entrepreneurs learn more about entrepreneurship and
+          pitch so that they can refine and develop their ideas to become successful business owners.</p>
       </div>
 
-      <div class="event-card-left mb-5 ghost-card slide-enter-left">
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">MOCK STOCK</h3>
-            <p class="card-description-size">Mock Stock is the imitation of the real
-              stock market of India. This event aimed to expose the students to real stock
-              market scenarios. Mock Stock is a trading game where the contestants buy
-              and sell virtual stocks. A fixed amount of money was given to each team for
-              investment.</p>
-          </div>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/b_plan/01.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/02.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/03.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/04.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/05.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/06.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/07.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/08.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/09.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/10.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/b_plan/11.JPG" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>    
+      <div class='event-card-container mx-auto' style="max-width: 65vw; width: 80%;">
 
-      <div class="event-card-right mb-5 ghost-card slide-enter-right">
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/e_quiz/01.JPG" class="d-block w-100" alt="...">
+        <div class="event-card-right mb-5 ghost-card slide-enter-right">
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/b_plan/01.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/02.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/03.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/04.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/05.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/06.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/07.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/08.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/09.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/10.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/11.JPG" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/02.JPG" class="d-block w-100" alt="...">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">B-PLAN</h3>
+              <p class="card-description-text">Do you have a Business Plan? </p>
+              <p class="card-description-text">Are you a wanna be entrepreneur? </p>
+              <p class="card-description-text">This is a platform for you to showcase your business
+                plan in front of out panel of judges and win big cash prizes for your B-Plan.
+                You might just find the investor you need.
+              </p>
             </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/03.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/04.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/05.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/06.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/07.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/08.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/e_quiz/09.JPG" class="d-block w-100" alt="...">
-            </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">E QUIZ</h3>
-            <p class="card-description-size">It was a group/solo quiz conducted in three rounds. The first round was a
-              written round. It had a set of 10 questions and there wasn't any
-              negative marking in the first round and the time allotted to answer each question was 40
-              seconds. The first round was a written round. It had a set of 10 questions and there wasn't any
-              negative marking in the first round and the time allotted to answer each question was 40
-              seconds. The third round was to identify the names of the female entrepreneurs of some of the
-              most recognised and reputed brands and companies in the world..</p>
           </div>
         </div>
+
+        <div class="event-card-left mb-5 ghost-card slide-enter-left">
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">MOCK STOCK</h3>
+              <p class="card-description-text">Mockstock, where unpredictability is the only certainty.
+                Manipulate stocks, gamble cautiously, negotiate with the broker
+                and maximize your profits! </p>
+              <p class="card-description-text">This event aimed to expose the students to real stock
+                market scenarios. Mock Stock is a trading game where the contestants buy
+                and sell virtual stocks.</p>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/b_plan/01.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/02.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/03.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/04.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/05.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/06.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/07.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/08.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/09.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/10.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/b_plan/11.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="event-card-right mb-5 ghost-card slide-enter-right">
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/e_quiz/01.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/02.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/03.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/04.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/05.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/06.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/07.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/08.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/e_quiz/09.JPG" class="d-block w-100" alt="...">
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">E QUIZ</h3>
+              <p class="card-description-text">How well do you know about the entrepreneurship and business
+                world? Let's quiz you to find out.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card-left mb-5 ghost-card slide-enter-left">
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">HACKATHON</h3>
+              <p class="card-description-text">
+                Lets put your coding skills at work. Solve interesting business problems and real
+                world challenges. Come and join like minded people to hack.
+              </p>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="event-card-right mb-5 ghost-card slide-enter-right">
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/big_bouts/01.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/big_bouts/02.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/big_bouts/03.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/big_bouts/04.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">Big Bouts</h3>
+              <p class="card-description-text">Do you have a thing for debating? This is a solo debate competition where
+                participants must
+                prove their mettle in oration by speaking for a given topic and defending it against cross-examination.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card-left mb-5 ghost-card slide-enter-left">
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">MOCK PLACEMENT</h3>
+              <p class="card-description-text">Mock Placement is conducted by some startups which provided the
+                participants the real recruitment journey. The company tested the participant's
+                theoretical knowledge of their respective domain and their applications.
+              </p>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="event-card-right mb-5 ghost-card slide-enter-right">
+          <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
+            <div class="carousel-inner event-carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="vertically-center">
+            <div class="card-body">
+              <h3 class="card-heading-text">PERSONALITY</h3>
+              <p class="card-description-text">This event was a personality development event which was
+                organized to test the entrepreneurial skills, leadership skills,
+                decision-making skills and convincing skills of an individual.This event had
+                4 rounds.</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
-      <div class="event-card-left mb-5 ghost-card slide-enter-left">
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">HACKATHON 2020</h3>
-            <p class="card-description-size">The Entrepreneurial Development Cell of Ramaiah Institute of
-              Technology organised a Hackathon, in association with GrowVation, on the last day of Empyreal Fest 2020.
-              The
-              teams had to discuss amongst themselves and come up with a
-              solution to one of the problem statements discussed above.On
-              succeeding in coming up with a solution , each team was expected to
-              work on a basic prototype - a website or an app that creates a basic
-              user interface and provides an effective solution to the given problem.</p>
-          </div>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+    </div>
+
+    <!-- E-Summit Ends  -->
+
+
+    <!-- E Fiesta Starts-->
+
+    <div class="section-container e-fiesta">
+
+      <div class="section-description">
+        <h2 class="slide-enter-bottom ">
+          E Fiesta
+        </h2>
+        <p class="slide-enter-bottom ">
+          Empyreal is an entrepreneurial fest, but we dont miss the fun! The events held under
+          'E- Fiesta' are all about fun and interesting games.
+        </p>
       </div>
 
-      <div class="event-card-right mb-5 ghost-card slide-enter-right">        
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/big_bouts/01.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/big_bouts/02.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/big_bouts/03.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/big_bouts/04.JPG" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">Big Bouts</h3>
-            <p class="card-description-size">It is, in essentiality, a solo debate competition where participants must
-              prove their mettle
-              in oration by speaking for a given topic and defending it against cross-examination.</p>
-          </div>
-        </div>
-      </div>
+      <div class="e-fiesta-events-container">
 
-      <div class="event-card-left mb-5 ghost-card slide-enter-left">
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">MOCK PLACEMENT</h3>
-            <p class="card-description-size">Mock Placement was conducted by some startups which provided the
-              participants the real recruitment journey. The company tested the participant's
-              theoretical knowledge of their respective domain and their applications.This event had 3 rounds in the
-              hiring process - offline aptitude test, technical round for coding, interview round.
+
+        <!-- Swiper Cross Roads-->
+        <div class="event-card slide-enter-left">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Cross Roads</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Cross Roads</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Cross Roads</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Cross Roads</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p>If you're too busy to treasure hunt, then you're too busy for fun!
+              <br>Get a team for smartest and fastest, crack the clues and reveal the treasure.
             </p>
           </div>
         </div>
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
 
-      <div class="event-card-right mb-5 ghost-card slide-enter-right">
-        <div id="carouselExampleControls" class="carousel slide vertically-center" data-ride="carousel">
-          <div class="carousel-inner event-carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/empyreal/header/a.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/b.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/empyreal/header/c.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div class="vertically-center">
-          <div class="card-body">
-            <h3 class="card-heading-text">PERSONALITY</h3>
-            <p class="card-description-size">This event was a personality development event which was
-              organized to test the entrepreneurial skills, leadership skills,
-              decision-making skills and convincing skills of an individual.This event had
-              4 rounds.</p>
-          </div>
-        </div>
-      </div>
+        <!-- Swiper JAM-->
+        <div class="event-card slide-enter-bottom">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
 
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/05.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/jam/06.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">J. A. M.</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p>
+              Its all about the control of mind over mouth.
+              <br>Can you make it through sixty seconds of
+              non-stop talking without hesitation, repetition, or deviation?
+            </p>
+          </div>
+        </div>
+
+        <!-- Swiper PubG-->
+        <div class="event-card slide-enter-right">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/05.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/06.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/07.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/08.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/pubg/09.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">PubG</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p>In PUBG, expect the unexpected.
+              <br>Get your team to survive our battleground.
+              <br>Winner's chikken dinner is on us.
+            </p>
+          </div>
+        </div>
+
+        <!-- Swiper IPL Auction-->
+        <div class="event-card slide-enter-left2">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">IPL Auction</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">IPL Auction</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">IPL Auction</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">IPL Auction</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p>1-2-3 sold!<br>
+              Bid on known cricket players to build a team of 11 to play in IPL and win with the best
+              rated team at the end.</p>
+          </div>
+        </div>
+
+        <!-- Swiper FIFA-->
+        <div class="event-card slide-enter-bottom2">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">FIFA</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">FIFA</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">FIFA</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">FIFA</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p> Play the extremely popular online game FIFA on gaming
+              consoles along with TV sets.</p>
+          </div>
+        </div>
+
+        <!-- Swiper Survival of the Wittiest-->
+        <div class="event-card slide-enter-right2">
+          <div class="e-fiesta-events-swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/01.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Survival of the Wittiest</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/02.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Survival of the Wittiest</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/03.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Survival of the Wittiest</h3>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="event-image">
+                  <img src="images/empyreal/e_quiz/04.JPG" alt="">
+                </div>
+                <div class="event-name">
+                  <h3 class="card-heading-text">Survival of the Wittiest</h3>
+                </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="event-info card-description-text">
+            <p>Are you witty enough to survive the imaginary extreme comditions we put you in?
+              <br>Convince us why should we save you among others?
+            </p>
+          </div>
+        </div>
+
+      </div>
 
     </div>
+
+    <!-- E Fiesta Ends-->
+
+
+    <!--My Story Sessions Starts-->
+
+    <div class="section-container my-story-session">
+
+      <div class="section-description">
+        <h2 class="slide-enter-bottom ">
+          My Story Sessions
+        </h2>
+        <p class="slide-enter-bottom ">
+          'My Story Session' is an informal engagement event that involves candid conversations, ideas,
+          community betterment initiatives and opportunities in business, with prominent tycoons.
+          Every year in "My story Session", we come across and interact with influential people, listen to their
+          life stories and experiences, looking forward to implement their ideas in our life.
+        </p>
+        <p class="slide-enter-bottom ">
+          Over the past years, we have had the pleasure to be in the presence of many
+          leading personalities of their respective fields and hear their incredibly inspiring stories.
+        </p>
+      </div>
+
+
+      <div class="my-story-session-swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\martin_dsouza.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Martin Dsouza</h3>
+              <div class="card-description-text">
+                <p>India's Leading DJ</p>
+                <p>Disco Jockey, Karaoke Jockey, Actor, </p>
+                <p>Writer Publishesd in The Collection, Silver Lining, Fins and feathers and Tabor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\likhit_achaiah.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Likhit Achaiah - The Black Ice Crew</h3>
+              <div class="card-description-text">
+                <p>Co-Founder of BlackIce Crew.</p>
+                <p>Breaking instructor and promoter since 2010.</p>
+                <p> Full time corporate employee in HP Inc since 2014.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\johanna_rodrigues.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Johanna Rodrigues - The Black Ice Crew</h3>
+              <div class="card-description-text">
+                <p>Professional Bgirl and yoga practitioner for the past 4 years</p>
+                <p>Breaking instructor and promoter since 2010.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\shawn_mendes.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Shawn Mendes - The Black Ice Crew</h3>
+              <div class="card-description-text">
+                <p>Professional breaker</p>
+                <p>Red Bull BC One India Cypher 2017 Runner Up, Finalist of IHLF 2010.</p>
+                <p>Represented the country in Taiwan in Dance@live World Cup</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\aparna_athreya.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text"> Aparna Athreya</h3>
+              <div class="card-description-text">
+                <p>Founder of the Story Triangle,</p>
+                <p>Accomplished psychologist and storyteller,</p>
+                <p>Founder of Kid and Parent Foundation,</p>
+                <p>TEDx Speaker on storytellng</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\bert_mueller.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Bert Mueller</h3>
+              <div class="card-description-text">
+                <p>Director of California Burrito Restaurants Pvt. Ltd.</p>
+                <p>Spoke about challenges he faced due to being a foreigner to sustain in Indian Market
+                  and about his various insipirational moments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\siddhi_mahajankatti.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Siddhi Mahajankatti</h3>
+              <div class="card-description-text">
+                <p>Budding Indian actress</p>
+                <p>Started her acting career in the tamil film industry</p>
+                <p> Worked in movies like Anandam and Happy Sardar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\tanvie_hans.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Tanvie Hans</h3>
+              <div class="card-description-text">
+                <p>International Football Player</p>
+                <p>Known as “The Alex Morgan of India”</p>
+                <p>Played for big clubs like Tottenham Hotspur and Fulham</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\simrun_chopra.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Simrun Chopra</h3>
+              <div class="card-description-text">
+                <p>Famous Nutritionist and a Fitness Blogger</p>
+                <p>A mother who lost 23Kgs in 5 months and started working as a fitness blogger to inspire and help
+                  please
+                  towards fitness.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\niharika_nm.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Niharika NM</h3>
+              <div class="card-description-text">
+                <p>Famous YouTube Comedian</p>
+                <p>With over 340k followers</p>
+                <p>Gave an outstanding performance in the videos of the famous youtube series GIRLIYAPA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\prarthana_jagan.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Prarthana Jagan</h3>
+              <div class="card-description-text">
+                <p>Vitiligo Model</p>
+                <p>Famous Beauty Blogger</p>
+                <p>Medical Electric student at RIT</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\vilas_nayak.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Vilas Nayak</h3>
+              <div class="card-description-text">
+                <p>Asia's fastest speed painter</p>
+                <p>Has been part of the most prestigious stages like Asia's Got Talent, United Nations
+                  General Assembly, India's Got Talent, Got Talent world stage live, International Film Festival of
+                  India
+                  and in over 23 countries.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\jordindian.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Jordindian</h3>
+              <div class="card-description-text">
+                <p>'Jordindian', a YouTube channel run by two friends, Vineeth “Beep” Kumar from India and Naser Al
+                  Azzeh from Jordan are making sure that India never falls short of laughs and out-of-the-box
+                  entertainment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\shreya_krishnan.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Shreya Krishnan</h3>
+              <div class="card-description-text">
+                <p>Mrs. India-Universe 2017</p>
+                <p>VP Marketing and Communications at Anviti Insurance Brokers</p>
+                <p>A poet, Freelance Writer and a Dancer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="speaker-image">
+              <img src="images\empyreal\mystorysessions\vineet_vinceet.jpg" alt="">
+            </div>
+            <div class="speaker-description">
+              <h3 class="card-heading-text">Vineet Vinceet</h3>
+              <div class="card-description-text">
+                <p>Beatboxer, Musician, emcee and performing artist</p>
+                <p> An an event titled 'Can You Say Beatbox?' created the largest
+                  human beatbox ensemble in the Limca Book of Records with 2136 participants.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+
+    <!--My Story Sessions End-->
+
+
+
+    <!-- Footer Starts-->
+
+    <%- include('partials/footer') %>
+
+    <!-- Footer Ends-->
 
   </div>
-
-  <!-- E-Summit Ends  -->
-
-
-  <!-- E Fiesta Starts-->
-
-  <div class="section-container e-fiesta">
-
-    <div class="section-description">
-      <h2 class="slide-enter-bottom ">
-        E Fiesta
-      </h2>
-      <p class="slide-enter-bottom ">
-        Empyreal is an entrepreneurial fest, but we dont miss the fun! The events held under
-        'E- Fiesta' are all about fun and interesting games.
-      </p>
-    </div>
-
-    <div class="e-fiesta-events-container">
-
-
-      <!-- Swiper Cross Roads-->
-      <div class="event-card slide-enter-left">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Cross Roads</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Cross Roads</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Cross Roads</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Cross Roads</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p>If you're too busy to treasure hunt, then you're too busy for fun!
-            <br>Get a team for smartest and fastest, crack the clues and reveal the treasure.
-          </p>
-        </div>
-      </div>
-
-      <!-- Swiper JAM-->
-      <div class="event-card slide-enter-bottom">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/05.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/jam/06.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">J. A. M.</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p>
-            Its all about the control of mind over mouth.
-            <br>Can you make it through sixty seconds of
-            non-stop talking without hesitation, repetition, or deviation?
-          </p>
-        </div>
-      </div>
-
-      <!-- Swiper PubG-->
-      <div class="event-card slide-enter-right">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/05.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/06.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/07.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/08.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/pubg/09.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">PubG</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p>In PUBG, expect the unexpected.
-            <br>Get your team to survive our battleground.
-            <br>Winner's chikken dinner is on us.
-          </p>
-        </div>
-      </div>
-
-      <!-- Swiper IPL Auction-->
-      <div class="event-card slide-enter-left2">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">IPL Auction</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">IPL Auction</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">IPL Auction</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">IPL Auction</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p>1-2-3 sold!<br>
-            Bid on known cricket players to build a team of 11 to play in IPL and win with the best
-            rated team at the end.</p>
-        </div>
-      </div>
-
-      <!-- Swiper FIFA-->
-      <div class="event-card slide-enter-bottom2">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">FIFA</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">FIFA</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">FIFA</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">FIFA</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p> Play the extremely popular online game FIFA on gaming
-            consoles along with TV sets.</p>
-        </div>
-      </div>
-
-      <!-- Swiper Survival of the Wittiest-->
-      <div class="event-card slide-enter-right2">
-        <div class="e-fiesta-events-swiper-container">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/01.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Survival of the Wittiest</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/02.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Survival of the Wittiest</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/03.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Survival of the Wittiest</h3>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="event-image">
-                <img src="images/empyreal/e_quiz/04.JPG" alt="">
-              </div>
-              <div class="event-name">
-                <h3 class="card-heading-text">Survival of the Wittiest</h3>
-              </div>
-            </div>
-
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="event-info card-description-text">
-          <p>Are you witty enough to survive the imaginary extreme comditions we put you in?
-            <br>Convince us why should we save you among others?
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- E Fiesta Ends-->
-
-
-  <!--My Story Sessions Starts-->
-
-  <div class="section-container">
-
-    <div class="section-description">
-      <h2 class="slide-enter-bottom ">
-        My Story Sessions
-      </h2>
-      <p class="slide-enter-bottom ">
-        'My Story Session' is an informal engagement event that involves candid conversations, ideas,
-        community betterment initiatives and opportunities in business, with prominent tycoons.
-        Every year in "My story Session", we come across and interact with influential people, listen to their
-        life stories and experiences, looking forward to implement their ideas in our life.
-      </p>
-      <p class="slide-enter-bottom ">
-        Over the past years, we have had the pleasure to be in the presence of many
-        leading personalities of their respective fields and hear their incredibly inspiring stories.
-      </p>
-    </div>
-
-
-    <div class="my-story-session-swiper-container">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\martin_dsouza.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Martin Dsouza</h3>
-            <div class="card-description-text">
-              <p>India's Leading DJ</p>
-              <p>Disco Jockey, Karaoke Jockey, Actor, </p>
-              <p>Writer Publishesd in The Collection, Silver Lining, Fins and feathers and Tabor</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\likhit_achaiah.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Likhit Achaiah - The Black Ice Crew</h3>
-            <div class="card-description-text">
-              <p>Co-Founder of BlackIce Crew.</p>
-              <p>Breaking instructor and promoter since 2010.</p>
-              <p> Full time corporate employee in HP Inc since 2014.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\johanna_rodrigues.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Johanna Rodrigues - The Black Ice Crew</h3>
-            <div class="card-description-text">
-              <p>Professional Bgirl and yoga practitioner for the past 4 years</p>
-              <p>Breaking instructor and promoter since 2010.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\shawn_mendes.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Shawn Mendes - The Black Ice Crew</h3>
-            <div class="card-description-text">
-              <p>Professional breaker</p>
-              <p>Red Bull BC One India Cypher 2017 Runner Up, Finalist of IHLF 2010.</p>
-              <p>Represented the country in Taiwan in Dance@live World Cup</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\aparna_athreya.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text"> Aparna Athreya</h3>
-            <div class="card-description-text">
-              <p>Founder of the Story Triangle,</p>
-              <p>Accomplished psychologist and storyteller,</p>
-              <p>Founder of Kid and Parent Foundation,</p>
-              <p>TEDx Speaker on storytellng</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\bert_mueller.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Bert Mueller</h3>
-            <div class="card-description-text">
-              <p>Director of California Burrito Restaurants Pvt. Ltd.</p>
-              <p>Spoke about challenges he faced due to being a foreigner to sustain in Indian Market
-                and about his various insipirational moments.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\siddhi_mahajankatti.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Siddhi Mahajankatti</h3>
-            <div class="card-description-text">
-              <p>Budding Indian actress</p>
-              <p>Started her acting career in the tamil film industry</p>
-              <p> Worked in movies like Anandam and Happy Sardar</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\tanvie_hans.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Tanvie Hans</h3>
-            <div class="card-description-text">
-              <p>International Football Player</p>
-              <p>Known as “The Alex Morgan of India”</p>
-              <p>Played for big clubs like Tottenham Hotspur and Fulham</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\simrun_chopra.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Simrun Chopra</h3>
-            <div class="card-description-text">
-              <p>Famous Nutritionist and a Fitness Blogger</p>
-              <p>A mother who lost 23Kgs in 5 months and started working as a fitness blogger to inspire and help please
-                towards fitness.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\niharika_nm.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Niharika NM</h3>
-            <div class="card-description-text">
-              <p>Famous YouTube Comedian</p>
-              <p>With over 340k followers</p>
-              <p>Gave an outstanding performance in the videos of the famous youtube series GIRLIYAPA</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\prarthana_jagan.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Prarthana Jagan</h3>
-            <div class="card-description-text">
-              <p>Vitiligo Model</p>
-              <p>Famous Beauty Blogger</p>
-              <p>Medical Electric student at RIT</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\vilas_nayak.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Vilas Nayak</h3>
-            <div class="card-description-text">
-              <p>Asia's fastest speed painter</p>
-              <p>Has been part of the most prestigious stages like Asia's Got Talent, United Nations
-                General Assembly, India's Got Talent, Got Talent world stage live, International Film Festival of India
-                and in over 23 countries.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\jordindian.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Jordindian</h3>
-            <div class="card-description-text">
-              <p>'Jordindian', a YouTube channel run by two friends, Vineeth “Beep” Kumar from India and Naser Al
-                Azzeh from Jordan are making sure that India never falls short of laughs and out-of-the-box
-                entertainment.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\shreya_krishnan.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Shreya Krishnan</h3>
-            <div class="card-description-text">
-              <p>Mrs. India-Universe 2017</p>
-              <p>VP Marketing and Communications at Anviti Insurance Brokers</p>
-              <p>A poet, Freelance Writer and a Dancer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="speaker-image">
-            <img src="images\empyreal\mystorysessions\vineet_vinceet.jpg" alt="">
-          </div>
-          <div class="speaker-description">
-            <h3 class="card-heading-text">Vineet Vinceet</h3>
-            <div class="card-description-text">
-              <p>Beatboxer, Musician, emcee and performing artist</p>
-              <p> An an event titled 'Can You Say Beatbox?' created the largest
-                human beatbox ensemble in the Limca Book of Records with 2136 participants.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-
-    </div>
-  </div>
-
-  <!--My Story Sessions End-->
-
-
-
-  <!-- Footer Starts-->
-
-  <%- include('partials/footer') %>
-
-  <!-- Footer Ends-->
-
 
   <!-- Bootstrap core and costom JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -1072,17 +1098,6 @@ s
 
   <!-- Custom JS -->
   <script src="js/empyreal.js"></script>
-
-  <!-- Preloader Script Starts-->
-  <script>
-    let preloader = document.getElementById('preloader');
-
-    function onLoadComplete() {
-      console.log(preloader)
-      preloader.remove();
-    }
-  </script>
-  <!-- Preloader Script ends-->
 
 </body>
 
