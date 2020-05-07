@@ -1,18 +1,180 @@
-body {
-    background: radial-gradient(#2c2c2c,#0f0f0f);
+*{
+    margin:0;
+    padding:0;
+} 
+ body {
     overflow-x: hidden;
-}
-
+    background: radial-gradient(#2c2c2c,#0f0f0f);
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color:#ffffff;
+    font-family: Raleway;
+  }
+  
+  p {
+    line-height: 1.75;
+  }
+  
+  
+  .text-primary {
+    color: #3ccefa !important;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  
+  .page-section {
+    padding: 100px 0;
+  }
+  
+  .page-section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  
+  .page-section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Raleway";
+  }
+  @media (min-width: 768px) {
+    section {
+      padding: 150px 0;
+    }
+  }
+  
+  ::-moz-selection {
+    background: #3ccefa;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #3ccefa;
+    text-shadow: none;
+  }
+  
+  img::-moz-selection {
+    background: transparent;
+  }
+  
+  img::selection {
+    background: transparent;
+  }
+  
+  img::-moz-selection {
+    background: transparent;
+  }
+  
+  .btn {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+  }
+  
+  .btn-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  
+  .btn-primary {
+    background-color: transparent;
+    border-color: #3ccefa;
+   
+  }
+  
+  .ghost-button{
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: #3eb8ddd3;
+    border-radius: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    padding: 18px 80px 20px;
+    transition: all 0.5s ease-out;
+    background: linear-gradient(270deg, #3eb8ddf8, #1a3e49f8, rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid #3eb8ddd3;
+    text-decoration: none !important;  
+  }
+  
+  .ghost-button:hover{
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+  }
+  
+  .btn-primary:active,
+  .btn-primary:focus,
+  .btn-primary:hover {
+    opacity:1;
+    background-color: #3ccefa !important;
+    border-color: #3ccefa !important;
+    color: white;
+  }
+  
+  .btn-primary:active,
+  .btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem #204c5a !important;
+    box-shadow: 0 0 0 0.2rem #204c5a !important;
+  }
+  
+    
+    .section-heading{
+      font-family: Expletus Sans;
+      font-size: 100px; 
+      padding-top: 130px;
+      padding-bottom:40px;
+      margin-bottom: 0;
+      backdrop-filter: grayscale(1) brightness(25%);
+    }
+  
+  .display-4{
+      margin-bottom: 30px;
+    }
+  
+  
+    
+    @media screen and (max-width:600px){
+      .section-heading{
+        font-size: 75px !important;
+      }
+    }
+  
+    @media screen and (max-width:470px){
+      .container-fluid{
+        width:430px;
+      }
+    }
+  
 
 .team-member {
     width: 300px;
     height: 400px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
+    background-position: center;
     background-color: black;
     background-size: cover;
     cursor: pointer;
@@ -26,11 +188,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;
-    background: rgba(77, 77, 77, 0.9);
+    background: rgba(44, 44, 44, 0.9);
     color: #FEF5DF;
     opacity: 0;
     transition: all 0.5s;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', serif;
   }
   
   .items {
@@ -43,7 +205,8 @@ body {
     line-height: 40px;
     transform: translateY(40px);
     transition: all 0.7s;
-  }
+    font-family: 'Expletus Sans';    
+}
   .head hr {
     display: block;
     width: 0;
@@ -68,6 +231,7 @@ body {
   }
   .details .email {
     font-size: 0.5em;
+    letter-spacing: 1px;
   }
   
   .team-member:hover .overlay {
