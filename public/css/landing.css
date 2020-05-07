@@ -280,7 +280,7 @@
     height: 100vh;
     text-align: center;
     color: white;
-    background-image: url("../img/o1copy.jpeg");
+    background-image: url("../images/backgrounds/masthead.jpeg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
@@ -326,7 +326,7 @@
   }
   
   section#portfolio{
-    background-image: url('../img/backgrounds/section-background.gif');
+    background-image: url('../images/backgrounds/section-background.gif');
     padding:0;
   }
 
@@ -339,7 +339,7 @@
   }
 
   section#team{
-    background-image: url('../img/backgrounds/section-background.gif');
+    background-image: url('../images/backgrounds/section-background.gif');
     padding:0;
   }
 
@@ -352,7 +352,7 @@
   }
   section#contact {
     background-color: #212529;
-    background-image: url("../img/worldmap.jpg");
+    background-image: url("../images/backgrounds/worldmap.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
