@@ -113,12 +113,17 @@ hr {
   background-color: rgba(0, 0, 0, 0.568);
 }
 .modal p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.7;
   font-family: sans-serif;
 }
 .modal h4 {
   color: #2584a1;
+}
+.modal p,
+.modal h4,
+.modal ul {
+  letter-spacing: 2px;
 }
 @media (min-width: 768px) and (max-width: 820px) {
   .ghost-button {
