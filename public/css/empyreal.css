@@ -12,13 +12,6 @@ body{
   z-index: -1;
 }
 
-.main-page-wrapper{
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 #previousBtn {
   position: absolute;
   top: 50%;
