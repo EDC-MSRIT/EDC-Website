@@ -14,19 +14,10 @@ body{
       Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-div{
- padding:0px 185px;
- margin-bottom: 30px;
-}
 
 div.container:not(#EDC){
   margin-bottom:30px;
   max-width:auto;
-}
-#EDC{
- margin-bottom: 0px;
- max-width:90%;
- padding-bottom: 0px;
 }
 
 /*#mainNav { 
@@ -146,7 +137,7 @@ div.container:not(#EDC){
   }*/
 .jumbotron{
   background: url("https://source.unsplash.com/HfR0W6HW_Cw") center center;   /*1_CMoFsPfso*/
-  background-repeat: :no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   margin:0px auto;
 
@@ -160,9 +151,6 @@ div.container:not(#EDC){
   }
   #mainContent h4{
       font-size: 1.5em !important;
-  }
-  footer h2{
-     font-size:1em;
   }
 }
 
@@ -183,24 +171,7 @@ div.container:not(#EDC){
 #last{
   margin-bottom: 60px !important;
 }
-
-  h3{
-      font-size:2em;
-      font-weight: bold;
-      text-decoration: underline;
-      margin-bottom: 40px !important;
-      color:#3ccefa;
-      font-family: Expletus Sans;
-      text-transform: uppercase;
-  }
-  p{
-      font-size:1rem;
-      letter-spacing: 2px;
-      word-spacing: 4px;
-      font-family: Raleway;
-      color:white;
-  }
-
+  
   .middle{
       font-size:1rem;
       color:white;
@@ -211,26 +182,7 @@ div.container:not(#EDC){
 
   }
 
-.footer{
-  margin-top:50px;
-   /*background-color: #d2d4d6;*/
-   color:white;
-  
- 
-}
 
-.footer p{
-   letter-spacing: 1px;
-}
-h4{
-  font-size:1rem !important;
-  color:white;
-      letter-spacing: 2px;
-      word-spacing: 4px;
-      font-family: Raleway;
-      color:white;
-      
-}
 
 
 .carousel{
@@ -271,19 +223,9 @@ h4{
     .carousel-item img{
       height:50vh !important;
     }
-    .footer h2{
-      font-size:1.5em !important;
-    }
-    .footer p{
-      letter-spacing: 1px !important;
-      word-spacing: 1px;
-    }
     .jumbotron{
       padding:20px 0px 20px 0px !important;
       margin-top: 100px !important;
-    }
-    div{
-      padding:0px 30px 0px 30px!important;
     }
 }
 @media(max-width: 766px){
@@ -313,7 +255,6 @@ h4{
 
 .differentBack{
   background-image: url("../images/backgrounds/section-background.gif");
- 
     /*background-size: cover;*/
     
     }
