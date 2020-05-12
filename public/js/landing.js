@@ -13,11 +13,20 @@ function prealoader() {
   jQuery(window).on("load", function () {
     (function ($) {
       prealoader();
+      animateMasthead();
     })(jQuery);
   });
 
   // Prealoder Ends---------------------------------------------------------------------------------------------------------------------------------
 
+function animateMasthead(){
+  
+  $('.masthead-content .image').css({
+    "opacity":"1",
+    "transform":"translateY(0)"
+  })
+  
+}
 var slideFromRight = {
     delay:500,
     distance: '50%',
