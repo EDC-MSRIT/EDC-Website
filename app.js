@@ -1,13 +1,13 @@
-var express = require("express")
+var express = require("express");
 var nodemailer = require("nodemailer");
-var smtpTransport=require("nodemailer-smtp-transport")
+var smtpTransport=require("nodemailer-smtp-transport");
 var app = express();
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended : true}));
 
 
-app.set("view engine","ejs")
+app.set("view engine","ejs");
 
 app.set('views', 'views');
 
@@ -23,6 +23,10 @@ app.get("/eventCalender",function(req,res){
 
 app.get("/team",function(req,res){
     res.render("team");
+});
+
+app.get("/idearise", function(req, res) {
+    res.render("idearise");
 });
 
 app.get("/startup",function(req,res){
@@ -46,7 +50,7 @@ app.post("/",function(req,res){
     
     
     var newRentride={name:name,email:email,phone:phone,
-    message:message}
+    message:message};
     
     /*Rentride.create(newRentride,function(err,newlyCreated){
     if(err){
@@ -69,7 +73,7 @@ app.post("/",function(req,res){
 
     
     </ul>
-    `
+    `;
     
     async function main(){
     
@@ -102,7 +106,7 @@ app.post("/",function(req,res){
     // });
     transporter.sendMail(mailOptions, function (err, info) {
     if(err)
-    console.log(err)
+    console.log(err);
     else
     console.log(info);
 
