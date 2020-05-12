@@ -62,7 +62,7 @@ ul {
   background-position: 99% 50%;
 }
 .margin {
-  margin-top: 131px;
+  margin-top: 160px;
 }
 hr {
   border: none;
@@ -147,15 +147,7 @@ hr {
     width: 4%;
   }
 }
-@media (max-width: 767px) and (min-width: 576px) {
-  hr {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    top: -128px;
-    left: calc(32% - 100px);
-    width: 3px;
-  }
+@media (max-width: 767px) and (min-width: 300px) {
   .main-carousel .carousel-item {
     position: relative;
     display: block;
@@ -172,28 +164,9 @@ hr {
   .carousel-control-prev {
     display: none;
   }
-  .fixed {
-    bottom: 0;
-    top: 0;
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
-  }
-  .row > div {
-    margin-left: 32% !important;
-  }
-  .date {
-    position: absolute;
-    top: calc(50% - 50px);
-    left: -150px;
-  }
+
   .carousel-inner:first-child {
     margin-top: 60px;
-  }
-  .modal p {
-    font-size: 18px;
-  }
-  .modal ul {
-    font-size: 18px;
   }
 }
 @keyframes open_border {
@@ -219,5 +192,35 @@ hr {
   }
   to {
     transform: scale(1);
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  hr {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    top: -135px;
+    left: calc(32% - 100px);
+    width: 3px;
+  }
+  .fixed {
+    bottom: 0;
+    top: 0;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+  .row > div {
+    margin-left: 32% !important;
+  }
+  .date {
+    position: absolute;
+    top: calc(50% - 50px) !important;
+    left: -150px;
+  }
+  .modal p {
+    font-size: 18px;
+  }
+  .modal ul {
+    font-size: 18px;
   }
 }
