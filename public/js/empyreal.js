@@ -4,7 +4,7 @@ function prealoader() {
     $("#preloader").fadeOut("fast", "linear"); // will first fade out the loading animation
     $("#loader-wrapper").fadeOut("fast", "linear"); // will fade out the loader container
     $("body").delay(350).css({ "overflow-y": "visible" }); // will enable the verital scroll on body
-    $("#mainPage").removeClass("display-none"); // will reveal the main page
+    $("#mainPage").css({"visibility":"initial"})
   }
 }
 

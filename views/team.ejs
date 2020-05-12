@@ -58,7 +58,17 @@
 </head>
 
 <body class="all">
-   
+<!-- Preloader Starts-->
+
+<div id="loader-wrapper">
+  <div id="preloader">
+    <%- include('partials/preloader.ejs') %>
+  </div>
+</div>
+
+<!-- Preloader ends-->
+
+<div id='mainPage' class="main-page-wrapper" style="visibility: hidden;">   
 <%- include('partials/navbar.ejs') %>
     
   <div class="container-fluids" style="background-image: url('images/backgrounds/section-background.gif');">
@@ -476,7 +486,7 @@
     <!-- End Members -->
     <!-- Footer -->
     <%- include('partials/footer') %>
-
+</div>
     <!--Local JS-->
     <script src="js/team.js"></script>
     <!-- End JS Files -->
