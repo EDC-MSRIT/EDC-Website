@@ -25,7 +25,6 @@ let slideFromRight = {
   duration: 1000,
   easing: "ease",
   delay: 600,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-right", slideFromRight);
 
@@ -36,7 +35,6 @@ let slideFromRight2 = {
   duration: 1000,
   easing: "ease",
   delay: 800,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-right2", slideFromRight2);
 
@@ -47,7 +45,6 @@ let slideFromBottom = {
   duration: 1000,
   easing: "ease",
   delay: 400,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
 
@@ -58,7 +55,6 @@ let slideFromBottom2 = {
   duration: 1000,
   easing: "ease",
   delay: 1000,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-bottom2", slideFromBottom2);
 
@@ -69,7 +65,6 @@ let slideFromLeft = {
   duration: 1000,
   easing: "ease",
   delay: 300,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-left", slideFromLeft);
 
@@ -80,7 +75,6 @@ let slideFromLeft2 = {
   duration: 1000,
   easing: "ease",
   delay: 400,
-  mobile: false
 };
 ScrollReveal().reveal(".slide-enter-left2", slideFromLeft2);
 
