@@ -4,7 +4,7 @@ function prealoader() {
     $("#preloader").fadeOut("fast", "linear"); // will first fade out the loading animation
     $("#loader-wrapper").fadeOut("fast", "linear"); // will fade out the loader container
     $("body").delay(350).css({ "overflow-y": "visible" }); // will enable the verital scroll on body
-    $("#mainPage").css({"visibility":"initial"})
+    $("#mainPage").css({ visibility: "initial" });
   }
 }
 
@@ -79,6 +79,9 @@ let slideFromLeft2 = {
 ScrollReveal().reveal(".slide-enter-left2", slideFromLeft2);
 
 //header animations start-----------------------------------------------------------
+function delayNavbar() {
+  $("#EDCNav").css({ opacity: "1", transform: "translateX(0)" });
+}
 
 function loadAnimatedHeader() {
   const hero = document.querySelector(".hero");
@@ -105,8 +108,8 @@ function loadAnimatedHeader() {
       { x: "-100%" },
       { x: "0%", ease: Power2.easeInOut },
       "-=1.2"
-    )
-    .fromTo(navbar, 0.7, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5");
+    );
+  delayNavbar();
 }
 
 // E-Fiesta Animations Here -------------------------------------------------------------------------------------------------------------
