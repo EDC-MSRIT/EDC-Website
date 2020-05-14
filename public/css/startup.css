@@ -16,6 +16,7 @@ body {
   font-family: Raleway;
 }
 
+
 p {
   line-height: 1.75;
 }
@@ -207,8 +208,7 @@ img::-moz-selection {
 
 @media screen and (max-width: 470px) {
   .section-heading {
-    font-size: 40px;
-    padding-top: 80px;
+    font-size: 55px;
   }
   .px-5 {
     padding-left: 0rem !important;

@@ -34,8 +34,18 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="overflow-y: hidden;">
+<!-- Preloader Starts-->
 
+<div id="loader-wrapper">
+  <div id="preloader">
+    <%- include('partials/preloader.ejs') %>
+  </div>
+</div>
+
+<!-- Preloader ends-->
+
+<div id='mainPage' class="main-page-wrapper" style="visibility: hidden;">  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
     <div class="container">
@@ -79,8 +89,8 @@
   <!-- About -->
   <section class="page-section" id="about">
     <div class="about-wrapper">
-      <h1 class="about-text text-center text-primary" style="font-family: 'Expletus Sans', cursive; font-weight: 900;">ENTREPRENEURSHIP DEVELOPMENT CELL & CENTRE FOR ADVANCED
-        TRAINING & CONTINUING EDUCATION
+      <h1 class="about-text text-center text-primary about__heading">
+        ENTREPRENEURSHIP DEVELOPMENT CELL & CENTRE FOR ADVANCED TRAINING & CONTINUING EDUCATION
       </h1>
       <br>
       <p class="about-text">
@@ -114,13 +124,12 @@
       </p>
       <br>
       <h3 class="about-text" style="color:#2584a1;font-family: 'Expletus Sans', cursive; font-weight: 900;">CORE VALUES</h3>
-      <p>
+      
         <ul style="list-style-type: none; width:70%">
-          <li class="about-text mt-2">To identify creative students and inspire them with an innovative ecosystem which provides professional
-            and ethical inputs to become successful entrepreneurs.</li>
+          <li class="about-text mt-2">To identify creative students and inspire them with an innovative ecosystem which provides professional and ethical inputs to become successful entrepreneurs.</li>
           <li class="about-text mt-3">To enable students to follow the path of enterprise with commitment to service.</li>
         </ul>
-      </p>
+      
     </div>
   </section>
 
@@ -202,13 +211,12 @@
             <h4 class="service-heading">Aidapp</h4>
           </div>
       </div>
-      </div>
+     </div>
       <div class=" text-center">
         <h3><a class="ghost-button start-button" href="/startup">
             More Startups
           </a></h3>
       </div>
-    </div>
   </section>
 
 
@@ -224,14 +232,14 @@
       <div class="row">
         <div class="col-md-6">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="images/team/principal.jpg" alt="">
+            <img class="mx-auto rounded-circle" src="images/team/principal.webp" alt="">
             <h4>Dr. N.V.R NAIDU</h4>
             <p class="text-muted">Principal<br>Ramaiah Institute of Technology</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="images/team/chethan.jpeg" alt="">
+            <img class="mx-auto rounded-circle" src="images/team/chethan.webp" alt="">
             <h4>Dr. C.S. Chethan Kumar</h4>
             <p class="text-muted">
 
@@ -358,6 +366,7 @@
 
   <!-- Footer -->
   <%- include('partials/footer') %>
+</div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

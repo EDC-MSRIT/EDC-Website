@@ -1,10 +1,18 @@
-html {
-    height: 100%;
-  }
-  
-  body {
-    background-image: radial-gradient(circle farthest-corner at center, rgb(38, 39, 39) 0%, rgb(19, 20, 20) 100%);
-  }
+
+html{
+  height:1000%;
+}
+
+.main-page-wrapper{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.display-none{
+  display: none;
+}
   
   .loader {
     position: absolute;

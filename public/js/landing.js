@@ -1,3 +1,32 @@
+// Prealoder---------------------------------------------------------------------------------------------------------------------------------
+function prealoader() {
+    if ($("#preloader").length) {
+      $("#preloader").fadeOut("fast", "linear"); // will first fade out the loading animation
+      $("#loader-wrapper").fadeOut("fast", "linear"); // will fade out the loader container
+      $("body").delay(350).css({ "overflow-y": "visible" }); // will enable the verital scroll on body // will reveal the main page
+      $('html').css({'height':'initial'})
+      $("#mainPage").css({"visibility":"initial"})
+    }
+  }
+  
+  // Window load function
+  jQuery(window).on("load", function () {
+    (function ($) {
+      prealoader();
+      animateMasthead();
+    })(jQuery);
+  });
+
+  // Prealoder Ends---------------------------------------------------------------------------------------------------------------------------------
+
+function animateMasthead(){
+  
+  $('.masthead-content .image').css({
+    "opacity":"1",
+    "transform":"translateY(0)"
+  })
+  
+}
 var slideFromRight = {
     delay:500,
     distance: '50%',

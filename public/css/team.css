@@ -194,7 +194,7 @@
   } */
     @media screen and (max-width:600px){
       .section-heading{
-        font-size: 75px !important;
+        font-size: 55px !important;
       }
     }
   
@@ -308,5 +308,13 @@
   }
   section:nth-child(1){
     grid-template-columns: unset;
+  }
+}
+
+@media screen and (max-width:500px){
+  .page-section-heading{
+    font-size:1.5em;
+    padding-left:10px;
+    padding-right:10px;
   }
 }

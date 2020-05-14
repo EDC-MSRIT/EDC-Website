@@ -3,7 +3,6 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
-
 body {
   overflow-x: hidden;
   background: radial-gradient(#2c2c2c, #0f0f0f);
@@ -224,24 +223,11 @@ img::-moz-selection {
 
 .image {
   width: 90%;
-
-  animation-name: logoAnim;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 1s ease-in-out;
 }
 
-@keyframes logoAnim {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
 
 @media (max-width: 1000px) {
   .image {
@@ -508,10 +494,18 @@ ul.social-buttons li a:hover {
 }
 @media (max-width: 500px) {
   #about h1 {
-    font-size: 1.2rem;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    padding-left:10px;
+    padding-right:10px;
   }
   .start-button {
     margin: 0.625rem;
+  }
+
+  .about-text{
+    font-size:12px;
+
   }
 }
 #about .about-wrapper {
@@ -533,4 +527,9 @@ html {
     height: 225px;
     width: 225px;
   }
+}
+
+.about__heading{
+  font-family: 'Expletus Sans', cursive; 
+  font-weight: 900;
 }
