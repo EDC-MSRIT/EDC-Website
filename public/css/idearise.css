@@ -52,7 +52,7 @@ body {
 }
 
 #differentBack {
-  background-image: url("../images/backgrounds/section-background.gif");
+  background-image: url("../images/backgrounds/section-background.webp");
   /*background-size: cover;*/
   color: white;
   margin-bottom: 90px;
@@ -75,7 +75,6 @@ body {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
-  text-decoration: underline;
 }
 
 .footer {
@@ -141,4 +140,8 @@ body {
     font-size: 1.95em !important;
     font-weight: bold !important;
   }
+}
+
+.text-uppercase{
+  text-transform: uppercase;
 }
