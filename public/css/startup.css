@@ -3,9 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
-html {
-  overflow-x: hidden;
-}
+
 body {
   overflow-x: hidden;
   background: radial-gradient(#2c2c2c, #0f0f0f);
