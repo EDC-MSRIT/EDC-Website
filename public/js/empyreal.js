@@ -80,13 +80,10 @@ ScrollReveal().reveal(".slide-enter-left2", slideFromLeft2);
 
 //header animations start-----------------------------------------------------------
 
-function delayNavbar(){
-  $('#EDCNav').css({"opacity": '1', "transform": 'translateX(0)'})
-}
-
 function loadAnimatedHeader() {
   const hero = document.querySelector(".hero");
   const slider = document.querySelector(".slider");
+  const navbar = document.querySelector(".delay-navbar");
 
   const tl = new TimelineMax();
 
@@ -109,7 +106,7 @@ function loadAnimatedHeader() {
       { x: "0%", ease: Power2.easeInOut },
       "-=1.2"
     )
-    delayNavbar();
+    .fromTo(navbar, 0.7, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5");
 }
 
 // E-Fiesta Animations Here -------------------------------------------------------------------------------------------------------------
