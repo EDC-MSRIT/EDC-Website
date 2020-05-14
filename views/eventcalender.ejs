@@ -1,64 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>EDC, RIT</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <title>EDC, RIT</title>
 
-    <!-- Custom fonts for this template -->
-    <link
-      href="vendor/fontawesome-free/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
-    <link href="css/eventcalender.css" rel="stylesheet" />
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 
-    <link href="css/scrollbar.css" rel="stylesheet" />
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="css/eventcalender.css" rel="stylesheet" />
 
-  <body>
+  <link href="css/scrollbar.css" rel="stylesheet" />
+</head>
+
+<body data-spy="scroll" data-target="#collapsibleNavbar" style="overflow-y: hidden;">
+
+  <!-- Preloader Starts-->
+
+  <div id="loader-wrapper">
+    <div id="preloader">
+      <%- include('partials/preloader.ejs') %>
+    </div>
+  </div>
+
+  <!-- Preloader ends-->
+
+  <div id='mainPage' class="main-page-wrapper" style="visibility:hidden;">
+
     <!-- Navigation -->
     <%- include('partials/navbar.ejs') %>
     <!--Navigation ends-->
     <div class="main-carousel">
-      <div
-        class="carousel slide"
-        data-ride="carousel"
-        id="carouselshow"
-        data-pause="hover"
-        data-interval="10000"
-      >
+      <div class="carousel slide" data-ride="carousel" id="carouselshow" data-pause="hover" data-interval="10000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <hr class="margin" />
@@ -72,17 +58,16 @@
                       <h3>Empyreal</h3>
                     </div>
                     <p class="card-subtitle mb-2 p-2 text-muted">
-                      Empyreal is a three to four day event which is one of the
-                      flagship events of EDC-RIT. 
+                      Empyreal is our annual flagship event which is a confluence of visionary students, professionals or anybody who has a passion for changing a little bit of the world with their ideas.   
                     </p>
                     <h3>
-                      <a class="ghost-button" href="empyreal" >
+                      <a class="ghost-button" href="empyreal">
                         Read more
                       </a>
                     </h3>
                   </div>
                 </div>
-                </div>
+              </div>
               <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
                 <div class="date ">3 Feb 2020</div>
                 <div class="card mb-4">
@@ -102,7 +87,7 @@
                   </div>
                 </div>
               </div>
-          
+
               <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
                 <div class="date">18-Nov 2019</div>
                 <div class="card mb-4">
@@ -112,18 +97,18 @@
                       <h3>IDEA RISE</h3>
                     </div>
                     <p class="card-subtitle mb-3 text-muted">
-                      It is an  event which encourages
-                      students  to pitch
+                      It is an event which encourages
+                      students to pitch
                       in their ideas, identifying a real world problem
                     </p>
                     <h3>
-                      <a class="ghost-button" href="idearise" >
+                      <a class="ghost-button" href="idearise">
                         Read more
                       </a>
                     </h3>
                   </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -138,7 +123,7 @@
                       <h3>Comic-Con Pop Culture Quiz</h3>
                     </div>
                     <p class="card-subtitle mb-3 text-muted">
-                      It is an  event that hosts speakers &
+                      It is an event that hosts speakers &
                       stakeholders from across the Pop-culture ecosystem.
                     </p>
                     <h3>
@@ -179,7 +164,7 @@
                     </div>
                     <p class="card-subtitle mb-3 text-muted">
                       It was an introductory meet about how a startup works and
-                      what  knowledge is required to become an
+                      what knowledge is required to become an
                       entrepreneur.
                     </p>
                     <h3>
@@ -196,9 +181,7 @@
           <div class="carousel-item">
             <hr class="margin" />
             <div class="row px-4">
-              <div
-                class=" col-7 col-md-4 col-xl-3 ml-xl-5 m-0 text-center"
-              >
+              <div class=" col-7 col-md-4 col-xl-3 ml-xl-5 m-0 text-center">
                 <div class="date">25-Sep 2019</div>
                 <div class="card mb-4">
                   <img class="card-img-top" src="images/eventCalender/meet2.webp" alt="" />
@@ -218,40 +201,27 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="col-7 col-md-4 col-xl-3 offset-xl-1 text-center"
-              >
+              <div class="col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
                 <div class="date">19-Sep 2019</div>
                 <div class="card mb-4">
-                  <img
-                    class="card-img-top"
-                    src="images/eventCalender/under25.webp"
-                    alt=""
-                  />
+                  <img class="card-img-top" src="images/eventCalender/under25.webp" alt="" />
                   <div class="card-body text-center p-2 pt-3">
                     <div class="card-title ">
                       <h3>UNDER 25 SUMMIT</h3>
                     </div>
-                    <p class="card-subtitle mb-3 text-muted"> 
-                       Renowned speakers such as Sumukhi Suresh, Vineeth
+                    <p class="card-subtitle mb-3 text-muted">
+                      Renowned speakers such as Sumukhi Suresh, Vineeth
                       Beep Kumar and Anto Philip were invited for Under 25 RIT Campus Summit.
                     </p>
                     <h3>
-                      <a
-                        class="ghost-button"
-                        href="#"
-                        data-toggle="modal"
-                        data-target="#modal-6"
-                      >
+                      <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-6">
                         Read more
                       </a>
                     </h3>
                   </div>
                 </div>
               </div>
-              <div
-                class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center"
-              >
+              <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
                 <div class="date">11-Sep 2019</div>
                 <div class="card mb-4">
                   <img class="card-img-top" src="images/eventCalender/meet1.webp" alt="" />
@@ -261,7 +231,7 @@
                     </div>
                     <p class="card-subtitle mb-3 text-muted">
                       The main motto of this meet was to create open
-                      communication among everyone. 
+                      communication among everyone.
                     </p>
                     <h3>
                       <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-5">
@@ -273,88 +243,78 @@
               </div>
             </div>
           </div>
-                    <div class="carousel-item ">
-                      <hr class="margin" />
-                      <div class="row px-4">
-                        <div class="col-7 col-md-4 col-xl-3 ml-xl-5 m-0 text-center">
-                          <div class="date">7-Sep 2019</div>
-                          <div class="card mb-4">
-                            <img class="card-img-top" src="images/eventCalender/ind2.webp" alt="" />
-                            <div class="card-body text-center p-3">
-                              <div class="card-title">
-                                <h3>Induction Program</h3>
-                              </div>
-                              <p class="card-subtitle mb-3 text-muted">
-                                It is the event organized by RIT for
-                                guiding and motivating newly admitted students.
-                              </p>
-                              <h3>
-                                <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-4">
-                                  Read more
-                                </a>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                        <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
-                          <div class="date">6-Sep 2019</div>
-                          <div class="card mb-4">
-                            <img class="card-img-top" src="images/eventCalender/intel.webp" alt="" />
-                            <div class="card-body text-center p-3">
-                              <div class="card-title">
-                                <h3>Intel Advertisement competition</h3>
-                              </div>
-                              <p class="card-subtitle mb-3 text-muted">
-                                EDC organized a competition of
-                                creating an advertisement for 
-                                Intel Core i7 processor
-                              </p>
-                              <h3>
-                                <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-3">
-                                  Read more
-                                </a>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                        <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
-                          <div class="date">31-Aug 2019</div>
-                          <div class="card mb-4 line-fix">
-                            <img class="card-img-top" src="images/eventCalender/orientation.webp" alt="" />
-                            <div class="card-body text-center p-3 ">
-                              <div class="card-title">
-                                <h3>EDC Orientation</h3>
-                              </div>
-                              <p class="card-subtitle mb-3 text-muted">
-                                EDC organised an Orientation function to introduce 
-                                students with the basic vision of the organization.
-                              </p>
-                              <h3>
-                                <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-2">
-                                  Read more
-                                </a>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <div class="carousel-item ">
+            <hr class="margin" />
+            <div class="row px-4">
+              <div class="col-7 col-md-4 col-xl-3 ml-xl-5 m-0 text-center">
+                <div class="date">7-Sep 2019</div>
+                <div class="card mb-4">
+                  <img class="card-img-top" src="images/eventCalender/ind2.webp" alt="" />
+                  <div class="card-body text-center p-3">
+                    <div class="card-title">
+                      <h3>Induction Program</h3>
                     </div>
+                    <p class="card-subtitle mb-3 text-muted">
+                      It is the event organized by RIT for
+                      guiding and motivating newly admitted students.
+                    </p>
+                    <h3>
+                      <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-4">
+                        Read more
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
+                <div class="date">6-Sep 2019</div>
+                <div class="card mb-4">
+                  <img class="card-img-top" src="images/eventCalender/intel.webp" alt="" />
+                  <div class="card-body text-center p-3">
+                    <div class="card-title">
+                      <h3>Intel Advertisement competition</h3>
+                    </div>
+                    <p class="card-subtitle mb-3 text-muted">
+                      EDC organized a competition of
+                      creating an advertisement for
+                      Intel Core i7 processor
+                    </p>
+                    <h3>
+                      <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-3">
+                        Read more
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class=" col-7 col-md-4 col-xl-3 offset-xl-1 text-center">
+                <div class="date">31-Aug 2019</div>
+                <div class="card mb-4 line-fix">
+                  <img class="card-img-top" src="images/eventCalender/orientation.webp" alt="" />
+                  <div class="card-body text-center p-3 ">
+                    <div class="card-title">
+                      <h3>EDC Orientation</h3>
+                    </div>
+                    <p class="card-subtitle mb-3 text-muted">
+                      EDC organised an Orientation function to introduce
+                      students with the basic vision of the organization.
+                    </p>
+                    <h3>
+                      <a class="ghost-button" href="#" data-toggle="modal" data-target="#modal-2">
+                        Read more
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-        <a
-          class="carousel-control-next"
-          role="button"
-          href="#carouselshow"
-          data-slide="next"
-          ><span class="carousel-control-next-icon"></span
-        ></a>
-        <a
-          class="carousel-control-prev"
-          role="button"
-          href="#carouselshow"
-          data-slide="prev"
-          ><span class="carousel-control-prev-icon"></span
-        ></a>
+        </div>
+      </div>
+      <a class="carousel-control-next" role="button" href="#carouselshow" data-slide="next"><span
+          class="carousel-control-next-icon"></span></a>
+      <a class="carousel-control-prev" role="button" href="#carouselshow" data-slide="prev"><span
+          class="carousel-control-prev-icon"></span></a>
     </div>
 
     <div class="modal" id="modal-2">
@@ -362,7 +322,9 @@
         <div class="bg-black text-center modalheader py-3">
           <h1 class="modal-title d-inline">EDC Orientation</h1>
           <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
+            <span class="text-white">
+              <h2 class="m-0">&times;</h2>
+            </span>
           </button>
         </div>
         <div class="modal-body text-center p-0">
@@ -370,63 +332,28 @@
             <div class="carousel slide" data-ride="carousel" id="slide-2">
               <div class="carousel-inner mb-3">
                 <div class="carousel-item active">
-                  <img
-                    src="images/eventCalender/orientation-slide/1.JPG"
-                    alt="Photo"
-                    width="70%"
-                    height="400px"
-                  />
+                  <img src="images/eventCalender/orientation-slide/1.JPG" alt="Photo" width="70%" height="400px" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    width="70%"
-                    height="400px"
-                    src="images/eventCalender/orientation-slide/2.JPG"
-                  />
+                  <img width="70%" height="400px" src="images/eventCalender/orientation-slide/2.JPG" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/orientation-slide/3.JPG"
-                    width="70%"
-                    height="400px"
-                  />
+                  <img src="images/eventCalender/orientation-slide/3.JPG" width="70%" height="400px" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/orientation-slide/4.JPG"
-                    width="70%"
-                    height="400px"
-                  />
+                  <img src="images/eventCalender/orientation-slide/4.JPG" width="70%" height="400px" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/orientation-slide/5.JPG"
-                    width="70%"
-                    height="400px"
-                  />
+                  <img src="images/eventCalender/orientation-slide/5.JPG" width="70%" height="400px" />
                 </div>
                 <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/orientation-slide/6.JPG"
-                    width="70%"
-                    height="400px"
-                  />
+                  <img src="images/eventCalender/orientation-slide/6.JPG" width="70%" height="400px" />
                 </div>
               </div>
-              <a
-                class="carousel-control-next"
-                role="button"
-                href="#slide-2"
-                data-slide="next"
-                ><span class="carousel-control-next-icon"></span
-              ></a>
-              <a
-                class="carousel-control-prev"
-                role="button"
-                href="#slide-2"
-                data-slide="prev"
-                ><span class="carousel-control-prev-icon"></span
-              ></a>
+              <a class="carousel-control-next" role="button" href="#slide-2" data-slide="next"><span
+                  class="carousel-control-next-icon"></span></a>
+              <a class="carousel-control-prev" role="button" href="#slide-2" data-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></a>
             </div>
             <div class="text-white">
               <p>
@@ -502,759 +429,697 @@
         </div>
       </div>
     </div>
-    </div>
-    <div class="modal" id="modal-3">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">Intel Advertisement competition</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="carousel slide" data-ride="carousel" id="slide-3">
-              <div class="carousel-inner mb-3">
-                <div class="carousel-item active">
-                  <img
-                    src="images/eventCalender/intel/1.JPEG"
-                    alt="Photo"
-                    width="40%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    width="40%"
-                    height="400px"
-                    src="images/eventCalender/intel/2.JPEG"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/intel/3.JPEG"
-                    width="40%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/intel/4.JPEG"
-                    width="40%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/intel/5.JPEG"
-                    width="40%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/intel/6.JPEG"
-                    width="40%"
-                    height="400px"
-                  />
-                </div>
+  
+  <div class="modal" id="modal-3">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">Intel Advertisement competition</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="carousel slide" data-ride="carousel" id="slide-3">
+            <div class="carousel-inner mb-3">
+              <div class="carousel-item active">
+                <img src="images/eventCalender/intel/1.JPEG" alt="Photo" width="40%" height="400px" />
               </div>
-              <a
-                class="carousel-control-next"
-                role="button"
-                href="#slide-3"
-                data-slide="next"
-                ><span class="carousel-control-next-icon"></span
-              ></a>
-              <a
-                class="carousel-control-prev"
-                role="button"
-                href="#slide-3"
-                data-slide="prev"
-                ><span class="carousel-control-prev-icon"></span
-              ></a>
-            </div>
-            <div class="text-white">
-              <p>
-                Intel is the world's largest manufacturer of microprocessors and
-                other devices related to communications and computing. Intel in
-                collaboration with EDC organized a competition of creating an
-                advertisement for the latest laptop powered by Intel Core i7
-                processor, and the prize money for the winning team was 30
-                thousand rupees.
-              </p>
-              <p>
-                The seminar hall was full of an enthusiastic crowd as one sets
-                foot inside the hall could feel the adrenaline rush. The anchor
-                briefed everyone about the competition and its rules and
-                regulations. And then judges Dr T Mohan Sundar, Dept. of
-                Management studies from Anna University, Chennai, Mr Guru and Mr
-                Suraj, the founder of Eco-drive were introduced. And then Mr
-                Guru took over the stage and had an excellent interactive and
-                fun session with the public. He also shot a question as food for
-                thought about the increased fine over traffic rules violation.
-                After that anchor played a quick quiz over the trendy games PUBG
-                and CS GO, and it was a great response from the public.
-              </p>
-              <p>
-                The presentation started with a bang, the presentations were
-                really out of the world. Some showcased their creativity by
-                making a short video comparing Intel i7 processor vs another
-                processor by comparing them as humans. The one-man in the video
-                can process information faster, perform multitasking and many
-                more without lagging while the other can't. And one team related
-                the intel i7 processor from the movie Endgame's character most
-                powerful being and it was the unique way of representing intel
-                i7 as inevitable. And some team used the meme content to
-                advertise Intel i7 processor in a distinctive way. Another team
-                also came up with unique concepts and presented their idea for
-                an advertisement. After all, the presentation ended and then
-                anchor played a small game with the crowd to light their mood.
-                Finally, it was the result time. The participants were nervous
-                and then all the three judges took over the stage to announce
-                the result. They cleared the criteria over which they selected
-                the winners that the one who had the best presentation skills,
-                whose idea would target the audience and had a unique way of
-                advertising the product. They collectively decided the winner
-                and the winning team's name was announced by Mr Suraj and it's
-                Akash and team who finally made it to the top and won the cash
-                prize of 30 thousand rupees. The competition was successfully
-                completed by the efforts of volunteers, participants and
-                obviously the publi
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-4">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">EDC Induction Program</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body mt-3 text-center">
-          <div class="container">
-            <div class="text-white">
-              <p>
-                The Induction Program is the event organized by RIT for guiding
-                and motivating newly admitted students and emphasizing them
-                towards entrepreneurship, personality development, serving
-                society and making it better, training them for being a
-                successful person and enhancing their skills.
-              </p>
-              <p>
-                This program is going to be conducted for 6 weeks and this is
-                the first meet of this session. Alumni of RIT arrive and share
-                their views about various topics and try to encourage students
-                to utilize all opportunities and think in a unique and
-                innovative way.
-              </p>
-              <p>
-                We had Mr. Shashank Ramamurthy, the founder at The Kingmakers
-                Organization and the campus ambassador of IIM Ahmedabad, as the
-                alumni speaker for that day. He motivates lots of people and
-                have his own perspective to analyze and dealing with the
-                situations. Shashank went on the stage and spoke to the crowd,
-                he talked about the education system and classified it into
-                several parts like back to School, before 10th Standard, after
-                10th Standard, college life and try to prove that our entire
-                education is based on conventional practices without
-                innovations.
-              </p>
-              <p>
-                He also told that entrepreneurship and startups are very
-                important for society. It contributes to the growth of
-                managerial abilities of individuals, gives rise to business and
-                opportunities, promotes a better standard of living and helps in
-                economic development too.
-              </p>
-              <p>
-                He gave a new kind of enthusiasm and energy to the audience and
-                all of them were very influenced and motivated by the way he
-                threw his ideas and acted as an inspiring icon. He makes them
-                understand how thinking matters the most in each and every
-                situation and work you do in your life
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-5">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">EDC First Meet</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body p-0 text-center">
-          <div class="container">
-            <div class="carousel slide" data-ride="carousel" id="slide-5">
-              <div class="carousel-inner mb-3">
-                <div class="carousel-item active">
-                  <img
-                    src="images/eventCalender/first meet/1.JPG"
-                    alt="Photo"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    width="70%"
-                    height="400px"
-                    src="images/eventCalender/first meet/2.JPG"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/first meet/3.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/first meet/4.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/first meet/5.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/first meet/6.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
+              <div class="carousel-item">
+                <img width="40%" height="400px" src="images/eventCalender/intel/2.JPEG" />
               </div>
-              <a
-                class="carousel-control-next"
-                role="button"
-                href="#slide-5"
-                data-slide="next"
-                ><span class="carousel-control-next-icon"></span
-              ></a>
-              <a
-                class="carousel-control-prev"
-                role="button"
-                href="#slide-5"
-                data-slide="prev"
-                ><span class="carousel-control-prev-icon"></span
-              ></a>
-            </div>
-            <div class="text-white">
-              <p>
-                After a huge and successful orientation presented by EDC club,
-                there was huge number of students that registered. To keep the
-                spirit high and to officially welcome students in EDC club, the
-                first meet was organised by Core and Secondary Core team of EDC.
-                To create a good meet, several thought processes, ideas and
-                brainstorming are required and following this, beautiful posters
-                were designed by the Design team, classroom publicity and online
-                publicity also created curiosity for meet among first years
-                which were done by the members of EDC club.
-              </p>
-              <p>
-                As per the message delivered, students were coming at DES Stairs
-                along with their friends. In a short span of time, whole DES
-                stairs compound was filled by first and second years. High
-                enthusiasm was filled in each student. The meet started with an
-                introduction about the club and was addressed by all the core
-                members.
-              </p>
-              <p>
-                Then to take away the meet, the main activity which was planned
-                to take out the best from students was “ Tete-a-Tete”. It is
-                basically a French word, where a conversation takes place
-                between two persons and some quick, interesting and tricky
-                questions are asked by each other and they have to give answers.
-                The main motto of this activity was to create open communication
-                among everyone, to bring out to make more friends and to
-                understand how people can be different and useful.
-              </p>
-              <p>
-                Set of 15 interesting questions were printed in numbers and were
-                distributed. The students were divided into groups and each one
-                of them was assigned, mentors. The rules were explained and the
-                students played and interacted well. People made new friends and
-                gave interesting and bizarre answers.
-              </p>
-              <p>
-                To end the meeting on a good note, a quick meeting was again
-                done by all the core and secondary core members with the
-                students and reviews were asked. Some students are already
-                having their own ideas and startups which is very beneficial for
-                society. They were also briefed about Under 25 Summit which will
-                happen in college campus along with the interesting and
-                brainstorming meets and workshops planned for them.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-6">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">UNDER 25 SUMMIT</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body mt-3 text-center">
-          <div class="container">
-            <div class="text-white">
-              <p>
-                It’s young India that’s taking up the baton when it comes to new
-                ideas and entrepreneurial startups, so why not create a network
-                for those aged 25 and below, who want to be taken a little more
-                seriously? That’s exactly what two enterprising youth did when
-                they created a business from the Under 25 Club they began as
-                college students. ain and business partner Anto Philip started
-                working on their idea as first-year undergraduate students at
-                Christ University in Bangalore, in 2013 – Jain studying Business
-                ​Management​ and Philip a degree in Commerce.
-              </p>
-              <p>
-                EDC with collaboration with Under25 organised Under25 Summit
-                which was a grand success. Renowned speakers such as Sumukhi
-                Suresh, Vineeth Beep Kumar and Anto Philip were invited. If
-                you’re young and want to do something on your own, you’re
-                associated with being restless, vibrant, too casual,” said
-                Philip. India is considered to be home to one of the
-                fastest​startup ecosystems in the world.​Fifty​per cent of the
-                Indian population is under the age of 25. Collaborating with
-                Under25 gave the students a great exposure towards
-                entrepreneurship.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-7">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">EDC Second Meet</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body p-0 text-center">
-          <div class="container">
-            <div class="carousel slide" data-ride="carousel" id="slide-7">
-              <div class="carousel-inner mb-3">
-                <div class="carousel-item active">
-                  <img
-                    src="images/eventCalender/second-meet/1.JPEG"
-                    alt="Photo"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    width="70%"
-                    height="400px"
-                    src="images/eventCalender/second-meet/2.JPG"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/second-meet/3.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/second-meet/4.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/second-meet/5.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/second-meet/6.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/intel/3.JPEG" width="40%" height="400px" />
               </div>
-              <a
-                class="carousel-control-next"
-                role="button"
-                href="#slide-7"
-                data-slide="next"
-                ><span class="carousel-control-next-icon"></span
-              ></a>
-              <a
-                class="carousel-control-prev"
-                role="button"
-                href="#slide-7"
-                data-slide="prev"
-                ><span class="carousel-control-prev-icon"></span
-              ></a>
-            </div>
-            <div class="text-white">
-              <p>
-                College life is that phase of life where each one of us creates
-                tonnes of memories with friends. Every student in college comes
-                with a dream to get a good college campus, good teachers, good
-                environment and at the end a good job. In all these years, a
-                student explores and finds out what talent or skills he or she
-                has. Surprisingly, students of today’s generation aspire to
-                become entrepreneurs and that is one of the best things which
-                will help our country.
-              </p>
-              <p>
-                The EDC faculty head, Dr C S Chethan Kumar guided us in every
-                possible way he can and EDC is thankful to him for his
-                auspicious guidance and help. The meet was done on the DES
-                stairs. In a short span of time, whole DES stairs compound was
-                filled by first and second years.
-              </p>
-              <p>
-                The meet was basically exposure to students towards publicity,
-                creativity, Teamwork and leadership which are the important
-                traits of entrepreneurship. EDC organised Mad Adds where
-                students were asked to advertise a product which was unique in
-                its way.
-              </p>
-              <p>
-                At last, the winners were given an entrepreneurial book named
-                “Losing my Religion” a book by ​Vishwas Mudagal​ as a reward.
-                The students were confident, energetic and were ready to work
-                and appear for the next meet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-8">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">EDC Upstarters Meet</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body mt-3 text-center">
-          <div class="container">
-            <div class="text-white">
-              <p>
-                EDC conducted its first Upstarters meet fo the year. It was an
-                introductory meet about how a startup works and what all
-                prerequisite knowledge is required to become an entrepreneur.
-                The meet was conducted by Niraj, Upstarters head of EDC-RIT. ​He
-                mentioned that capacity and willingness to develop, organize and
-                manage a business venture along with any of its risks in order
-                to make a profit is entrepreneurship. The most obvious example
-                of ​entrepreneurship is the starting of new businesses. It turns
-                out that there are ​four distinct ​types of entrepreneurial
-                organizations; small businesses, scalable startups, large
-                companies and social ​entrepreneurs​. They all engage in
-                ​entrepreneurship​.
-              </p>
-              <h4 class="text-left">
-                He talked about the four key elements of entrepreneurship which
-                are
-              </h4>
-              <ul class="text-left">
-                <li>
-                  Innovation - An entrepreneur is the key source of innovation
-                  and variation in an economy
-                </li>
-                <li>
-                  Risk-Taking - Entrepreneurship and risk-taking go hand in hand
-                </li>
-                <li>
-                  Vision - Vision or foresight is one of the main driving forces
-                  behind any entrepreneur
-                </li>
-                <li>Organization.</li>
-              </ul>
-              <h4 class="text-left">
-                He also talked about the main features of entrepreneurship which
-                are:
-              </h4>
-              <ul class="text-left">
-                <li>Related to innovation</li>
-                <li>Profit potential</li>
-                <li>Risk bearing</li>
-                <li>Idea Generation</li>
-                <li>Feasibility study</li>
-                <li>Development of managerial capabilities</li>
-              </ul>
-              <p>
-                Overall the meet was very informative and students learnt the
-                basics of entrepreneurship.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-9">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">
-            GIGA Workshop On Artificial Intelligence.
-          </h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body p-0 text-center">
-          <div class="container">
-            <div class="carousel slide" data-ride="carousel" id="slide-9">
-              <div class="carousel-inner mb-3">
-                <div class="carousel-item active">
-                  <img
-                    src="images/eventCalender/giga/2.JPG"
-                    alt="Photo"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    width="70%"
-                    height="400px"
-                    src="images/eventCalender/giga/3.JPG"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/giga/4.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/giga/5.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/eventCalender/giga/1.JPG"
-                    width="70%"
-                    height="400px"
-                  />
-                </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/intel/4.JPEG" width="40%" height="400px" />
               </div>
-              <a
-                class="carousel-control-next"
-                role="button"
-                href="#slide-9"
-                data-slide="next"
-                ><span class="carousel-control-next-icon"></span
-              ></a>
-              <a
-                class="carousel-control-prev"
-                role="button"
-                href="#slide-9"
-                data-slide="prev"
-                ><span class="carousel-control-prev-icon"></span
-              ></a>
+              <div class="carousel-item">
+                <img src="images/eventCalender/intel/5.JPEG" width="40%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/intel/6.JPEG" width="40%" height="400px" />
+              </div>
             </div>
-            <div class="text-white">
-              <p>
-                GIGA stands for “ GIVING INDIANS GLOBAL ACCESS”. GIGA is
-                currently working all over INDIA as well as other foreign
-                countries and helping students in terms of market , business ,
-                entrepreneurship, technology , internet , etc. Hence currently
-                GIGA has collaborated with RAMAIAH Institute of Management ,
-                RAMAIAH College of Arts , Science & Commerce , RAMAIAH Institute
-                of Technology. GIGA has started workshop series in all of them
-                to expose the students to a new world.
-              </p>
-              <p>
-                The first workshop was on the topic , “FUTURE OF AI - Explore
-                new frontiers , a hands on workshop”. AI stands for ARTIFICIAL
-                INTELLIGENCE which is one of the rapid growing industries all
-                over the world. The registration fee was INR 500 to experience
-                the amazing workshop. Light lamp was done , God’s blessings were
-                taken and the workshop started with high enthusiasm.The
-                honourable chief guest and the instructor of the workshop was
-                MS. SYEDA AMEENA BEGUM. In her role, she has made significant
-                contributions in utilizing data science to drive value in
-                industry domain. She has been recognised as the best performer
-                in the project “Watson Assistant - IGA”. Prior to joining IBM
-                India, she has introduced data science and its application in
-                the education industry. She has applied Azure cloud services to
-                build and deploy intelligent solutions. She has applied her
-                skills in Machine Learning , Data Analysis and Visualisation,
-                Power BI for interactive analysis. She has a Bachelor of
-                Engineering in information science at Acharya Institute of
-                Technology, Bangalore. She has several publications like : HOW
-                DO I EXPLAIN MACHINE LEARNING TO A KID , 3 different ways a
-                MACHINE can learn , etc.
-              </p>
-              <p>
-                The presentation session was highly motivating and brought a
-                professional atmosphere among all students. The laptops were
-                mandatory . Interactive session took place in which students
-                were asked to put up their questions and ideas. Those who wanted
-                to further continue were invited to join the link for course.
-              </p>
-            </div>
+            <a class="carousel-control-next" role="button" href="#slide-3" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+            <a class="carousel-control-prev" role="button" href="#slide-3" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+          </div>
+          <div class="text-white">
+            <p>
+              Intel is the world's largest manufacturer of microprocessors and
+              other devices related to communications and computing. Intel in
+              collaboration with EDC organized a competition of creating an
+              advertisement for the latest laptop powered by Intel Core i7
+              processor, and the prize money for the winning team was 30
+              thousand rupees.
+            </p>
+            <p>
+              The seminar hall was full of an enthusiastic crowd as one sets
+              foot inside the hall could feel the adrenaline rush. The anchor
+              briefed everyone about the competition and its rules and
+              regulations. And then judges Dr T Mohan Sundar, Dept. of
+              Management studies from Anna University, Chennai, Mr Guru and Mr
+              Suraj, the founder of Eco-drive were introduced. And then Mr
+              Guru took over the stage and had an excellent interactive and
+              fun session with the public. He also shot a question as food for
+              thought about the increased fine over traffic rules violation.
+              After that anchor played a quick quiz over the trendy games PUBG
+              and CS GO, and it was a great response from the public.
+            </p>
+            <p>
+              The presentation started with a bang, the presentations were
+              really out of the world. Some showcased their creativity by
+              making a short video comparing Intel i7 processor vs another
+              processor by comparing them as humans. The one-man in the video
+              can process information faster, perform multitasking and many
+              more without lagging while the other can't. And one team related
+              the intel i7 processor from the movie Endgame's character most
+              powerful being and it was the unique way of representing intel
+              i7 as inevitable. And some team used the meme content to
+              advertise Intel i7 processor in a distinctive way. Another team
+              also came up with unique concepts and presented their idea for
+              an advertisement. After all, the presentation ended and then
+              anchor played a small game with the crowd to light their mood.
+              Finally, it was the result time. The participants were nervous
+              and then all the three judges took over the stage to announce
+              the result. They cleared the criteria over which they selected
+              the winners that the one who had the best presentation skills,
+              whose idea would target the audience and had a unique way of
+              advertising the product. They collectively decided the winner
+              and the winning team's name was announced by Mr Suraj and it's
+              Akash and team who finally made it to the top and won the cash
+              prize of 30 thousand rupees. The competition was successfully
+              completed by the efforts of volunteers, participants and
+              obviously the publi
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal" id="modal-10">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">Comic-Con Pop Culture Quiz</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
-        </div>
-        <div class="modal-body  text-center">
-          <div class="container">
-            <div class="text-white">
-              <p>
-                Comic-Con India’s Pop Culture Forum is an exclusive event that
-                hosts delegates, speakers & stakeholders from across the
-                Pop-culture ecosystem. Comic-Con India’s Pop-Ups feature several
-                awesome experiences, activities and meet-ups.
-              </p>
-              <p>
-                The event “Comic-Con Pop Culture Quiz ” was hosted in our
-                college on the 11th of November.The theme of this event was
-                Anime , Marvel/Dc Movies , Comics , Web Series , Movies , TV
-                Series . In this event , the quiz master asked few questions in
-                different rounds based on this theme and the award was given to
-                the winners . The award for this event was the pass for the
-                Comic-Con Pop Culture Event happening on Saturday.
-              </p>
-              <h4>
-                This event took place in ​three rounds​.
-              </h4>
-              <p>
-                <u>1st round ​Cruel Elimination ROUND :</u> - In this the teams
-                had to guess the name of the character by seeing the shadow of
-                the character. There were 40 slides in total and each was shown
-                for 6 seconds to guess. Once all the slides were shown, the
-                answer sheets were taken and checked by the organisers and cut
-                off for going to the next round was 19. Fourteen teams (14) got
-                selected for the next round.
-              </p>
-              <p>
-                <u>2nd round :</u>- It was a rapid fire round. Each question
-                carries 2 marks. There were brownie points also in which the
-                quiz master will ask some sub questions related to the theme and
-                if any team answers it they get brownie points. There was
-                negative marking also in which they cut marks by (-1) minus one
-                of that team. You can score brownie points by yourself if you do
-                something exciting related to that question. From this round 4
-                teams got selected.
-              </p>
-              <P>
-                <u>3rd round :</u> ​AUDIO ROUND - In this teams had to listen to
-                that audio and tell which song it is and of which show. In some
-                of the audios teams had to sing the song. In this round 2 teams
-                had a tie in between them and then they were asked some comic
-                questions .Finally at the end, 2 teams won the event.
-              </P>
-            </div>
+  </div>
+  <div class="modal" id="modal-4">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">EDC Induction Program</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body mt-3 text-center">
+        <div class="container">
+          <div class="text-white">
+            <p>
+              The Induction Program is the event organized by RIT for guiding
+              and motivating newly admitted students and emphasizing them
+              towards entrepreneurship, personality development, serving
+              society and making it better, training them for being a
+              successful person and enhancing their skills.
+            </p>
+            <p>
+              This program is going to be conducted for 6 weeks and this is
+              the first meet of this session. Alumni of RIT arrive and share
+              their views about various topics and try to encourage students
+              to utilize all opportunities and think in a unique and
+              innovative way.
+            </p>
+            <p>
+              We had Mr. Shashank Ramamurthy, the founder at The Kingmakers
+              Organization and the campus ambassador of IIM Ahmedabad, as the
+              alumni speaker for that day. He motivates lots of people and
+              have his own perspective to analyze and dealing with the
+              situations. Shashank went on the stage and spoke to the crowd,
+              he talked about the education system and classified it into
+              several parts like back to School, before 10th Standard, after
+              10th Standard, college life and try to prove that our entire
+              education is based on conventional practices without
+              innovations.
+            </p>
+            <p>
+              He also told that entrepreneurship and startups are very
+              important for society. It contributes to the growth of
+              managerial abilities of individuals, gives rise to business and
+              opportunities, promotes a better standard of living and helps in
+              economic development too.
+            </p>
+            <p>
+              He gave a new kind of enthusiasm and energy to the audience and
+              all of them were very influenced and motivated by the way he
+              threw his ideas and acted as an inspiring icon. He makes them
+              understand how thinking matters the most in each and every
+              situation and work you do in your life
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal" id="modal-13">
-      <div class="m-3 fixed">
-        <div class="bg-black text-center modalheader py-3">
-          <h1 class="modal-title d-inline">Empyreal Volunteer Drive</h1>
-          <button type="button" class="close mr-4" data-dismiss="modal">
-            <span class="text-white"><h2 class="m-0">&times;</h2></span>
-          </button>
+  </div>
+  <div class="modal" id="modal-5">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">EDC First Meet</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <div class="container">
+          <div class="carousel slide" data-ride="carousel" id="slide-5">
+            <div class="carousel-inner mb-3">
+              <div class="carousel-item active">
+                <img src="images/eventCalender/first meet/1.JPG" alt="Photo" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img width="70%" height="400px" src="images/eventCalender/first meet/2.JPG" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/first meet/3.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/first meet/4.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/first meet/5.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/first meet/6.JPG" width="70%" height="400px" />
+              </div>
+            </div>
+            <a class="carousel-control-next" role="button" href="#slide-5" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+            <a class="carousel-control-prev" role="button" href="#slide-5" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+          </div>
+          <div class="text-white">
+            <p>
+              After a huge and successful orientation presented by EDC club,
+              there was huge number of students that registered. To keep the
+              spirit high and to officially welcome students in EDC club, the
+              first meet was organised by Core and Secondary Core team of EDC.
+              To create a good meet, several thought processes, ideas and
+              brainstorming are required and following this, beautiful posters
+              were designed by the Design team, classroom publicity and online
+              publicity also created curiosity for meet among first years
+              which were done by the members of EDC club.
+            </p>
+            <p>
+              As per the message delivered, students were coming at DES Stairs
+              along with their friends. In a short span of time, whole DES
+              stairs compound was filled by first and second years. High
+              enthusiasm was filled in each student. The meet started with an
+              introduction about the club and was addressed by all the core
+              members.
+            </p>
+            <p>
+              Then to take away the meet, the main activity which was planned
+              to take out the best from students was “ Tete-a-Tete”. It is
+              basically a French word, where a conversation takes place
+              between two persons and some quick, interesting and tricky
+              questions are asked by each other and they have to give answers.
+              The main motto of this activity was to create open communication
+              among everyone, to bring out to make more friends and to
+              understand how people can be different and useful.
+            </p>
+            <p>
+              Set of 15 interesting questions were printed in numbers and were
+              distributed. The students were divided into groups and each one
+              of them was assigned, mentors. The rules were explained and the
+              students played and interacted well. People made new friends and
+              gave interesting and bizarre answers.
+            </p>
+            <p>
+              To end the meeting on a good note, a quick meeting was again
+              done by all the core and secondary core members with the
+              students and reviews were asked. Some students are already
+              having their own ideas and startups which is very beneficial for
+              society. They were also briefed about Under 25 Summit which will
+              happen in college campus along with the interesting and
+              brainstorming meets and workshops planned for them.
+            </p>
+          </div>
         </div>
-        <div class="modal-body mt-3 text-center">
-          <div class="container">
-            <div class="text-white">
-              <p>
-                All the first year students that were a part of the E Cell were first introduced about the festl and were explained
-                how this festival is a big part of the E Cell working, throughout the year. This was done in the first volunteers’ meet
-                where the first year students were introduced to the Primary and Secondary core team that were responsible for the
-                preparations, and everyone was briefed about the fest, the ideas behind it, and how everything was to be done from the
-                next day onwards.
-              </p>
-              <p>
-                The next day of preparation started with everyone being given a chance to showcase their creative talents. First task
-                was to make as many posters as possible so that we can publicize the events that are going to be held under Empyreal-19.
-                Everyone enjoyed drawing, painting, and being creative after the busy academic life at college. The coordinators were
-                giving ideas and helping freshers to manage their thoughts on the chart paper in a better way, while some were also
-                issuing the proper stationary needed.
-              </p>
-              <p>
-                Count of everything was being maintained properly so they can get everything back at the end of the day. At the end of
-                the day, everyone came up with some great posters. The second day of preparation involved poster making and some other
-                great creative work too. Big posters were being made by the core creativity team, where some creative freshers who were
-                good at painting were also given a chance. Students were also seen making artifacts and some other creative
-                installations like the robot Walley, flowers, cones, painting cups and many such things. Origami work was also being
-                done where many students learnt to to work with coloured papers and make creative origami pieces. By the eighth day, the
-                E Cell team was ready with the creative work done and was heading on to the next part of preparation that was the
-                publicizing part.
-              </p>
-              <p>Publicity of the event started with publicizing of the inter- collegiate events. The volunteers were sent to different
-              colleges so that they can make the students aware of this extravaganza which was going to happen in Ramaiah Institute of
-              Technology. The volunteers were asked to report the E Cell sharp at 8 A.M where EDC Coordinators briefed them about the
-              procedures and instructions. Each group used to depart to their assigned colleges along with a permission letter issued
-              from the college, a brochure containing information about the events, some posters that had to be put in the college
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-6">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">UNDER 25 SUMMIT</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body mt-3 text-center">
+        <div class="container">
+          <div class="text-white">
+            <p>
+              It’s young India that’s taking up the baton when it comes to new
+              ideas and entrepreneurial startups, so why not create a network
+              for those aged 25 and below, who want to be taken a little more
+              seriously? That’s exactly what two enterprising youth did when
+              they created a business from the Under 25 Club they began as
+              college students. ain and business partner Anto Philip started
+              working on their idea as first-year undergraduate students at
+              Christ University in Bangalore, in 2013 – Jain studying Business
+              ​Management​ and Philip a degree in Commerce.
+            </p>
+            <p>
+              EDC with collaboration with Under25 organised Under25 Summit
+              which was a grand success. Renowned speakers such as Sumukhi
+              Suresh, Vineeth Beep Kumar and Anto Philip were invited. If
+              you’re young and want to do something on your own, you’re
+              associated with being restless, vibrant, too casual,” said
+              Philip. India is considered to be home to one of the
+              fastest​startup ecosystems in the world.​Fifty​per cent of the
+              Indian population is under the age of 25. Collaborating with
+              Under25 gave the students a great exposure towards
+              entrepreneurship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-7">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">EDC Second Meet</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <div class="container">
+          <div class="carousel slide" data-ride="carousel" id="slide-7">
+            <div class="carousel-inner mb-3">
+              <div class="carousel-item active">
+                <img src="images/eventCalender/second-meet/1.JPEG" alt="Photo" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img width="70%" height="400px" src="images/eventCalender/second-meet/2.JPG" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/second-meet/3.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/second-meet/4.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/second-meet/5.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/second-meet/6.JPG" width="70%" height="400px" />
+              </div>
+            </div>
+            <a class="carousel-control-next" role="button" href="#slide-7" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+            <a class="carousel-control-prev" role="button" href="#slide-7" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+          </div>
+          <div class="text-white">
+            <p>
+              College life is that phase of life where each one of us creates
+              tonnes of memories with friends. Every student in college comes
+              with a dream to get a good college campus, good teachers, good
+              environment and at the end a good job. In all these years, a
+              student explores and finds out what talent or skills he or she
+              has. Surprisingly, students of today’s generation aspire to
+              become entrepreneurs and that is one of the best things which
+              will help our country.
+            </p>
+            <p>
+              The EDC faculty head, Dr C S Chethan Kumar guided us in every
+              possible way he can and EDC is thankful to him for his
+              auspicious guidance and help. The meet was done on the DES
+              stairs. In a short span of time, whole DES stairs compound was
+              filled by first and second years.
+            </p>
+            <p>
+              The meet was basically exposure to students towards publicity,
+              creativity, Teamwork and leadership which are the important
+              traits of entrepreneurship. EDC organised Mad Adds where
+              students were asked to advertise a product which was unique in
+              its way.
+            </p>
+            <p>
+              At last, the winners were given an entrepreneurial book named
+              “Losing my Religion” a book by ​Vishwas Mudagal​ as a reward.
+              The students were confident, energetic and were ready to work
+              and appear for the next meet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-8">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">EDC Upstarters Meet</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body mt-3 text-center">
+        <div class="container">
+          <div class="text-white">
+            <p>
+              EDC conducted its first Upstarters meet fo the year. It was an
+              introductory meet about how a startup works and what all
+              prerequisite knowledge is required to become an entrepreneur.
+              The meet was conducted by Niraj, Upstarters head of EDC-RIT. ​He
+              mentioned that capacity and willingness to develop, organize and
+              manage a business venture along with any of its risks in order
+              to make a profit is entrepreneurship. The most obvious example
+              of ​entrepreneurship is the starting of new businesses. It turns
+              out that there are ​four distinct ​types of entrepreneurial
+              organizations; small businesses, scalable startups, large
+              companies and social ​entrepreneurs​. They all engage in
+              ​entrepreneurship​.
+            </p>
+            <h4 class="text-left">
+              He talked about the four key elements of entrepreneurship which
+              are
+            </h4>
+            <ul class="text-left">
+              <li>
+                Innovation - An entrepreneur is the key source of innovation
+                and variation in an economy
+              </li>
+              <li>
+                Risk-Taking - Entrepreneurship and risk-taking go hand in hand
+              </li>
+              <li>
+                Vision - Vision or foresight is one of the main driving forces
+                behind any entrepreneur
+              </li>
+              <li>Organization.</li>
+            </ul>
+            <h4 class="text-left">
+              He also talked about the main features of entrepreneurship which
+              are:
+            </h4>
+            <ul class="text-left">
+              <li>Related to innovation</li>
+              <li>Profit potential</li>
+              <li>Risk bearing</li>
+              <li>Idea Generation</li>
+              <li>Feasibility study</li>
+              <li>Development of managerial capabilities</li>
+            </ul>
+            <p>
+              Overall the meet was very informative and students learnt the
+              basics of entrepreneurship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-9">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">
+          GIGA Workshop On Artificial Intelligence.
+        </h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <div class="container">
+          <div class="carousel slide" data-ride="carousel" id="slide-9">
+            <div class="carousel-inner mb-3">
+              <div class="carousel-item active">
+                <img src="images/eventCalender/giga/2.JPG" alt="Photo" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img width="70%" height="400px" src="images/eventCalender/giga/3.JPG" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/giga/4.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/giga/5.JPG" width="70%" height="400px" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/eventCalender/giga/1.JPG" width="70%" height="400px" />
+              </div>
+            </div>
+            <a class="carousel-control-next" role="button" href="#slide-9" data-slide="next"><span
+                class="carousel-control-next-icon"></span></a>
+            <a class="carousel-control-prev" role="button" href="#slide-9" data-slide="prev"><span
+                class="carousel-control-prev-icon"></span></a>
+          </div>
+          <div class="text-white">
+            <p>
+              GIGA stands for “ GIVING INDIANS GLOBAL ACCESS”. GIGA is
+              currently working all over INDIA as well as other foreign
+              countries and helping students in terms of market , business ,
+              entrepreneurship, technology , internet , etc. Hence currently
+              GIGA has collaborated with RAMAIAH Institute of Management ,
+              RAMAIAH College of Arts , Science & Commerce , RAMAIAH Institute
+              of Technology. GIGA has started workshop series in all of them
+              to expose the students to a new world.
+            </p>
+            <p>
+              The first workshop was on the topic , “FUTURE OF AI - Explore
+              new frontiers , a hands on workshop”. AI stands for ARTIFICIAL
+              INTELLIGENCE which is one of the rapid growing industries all
+              over the world. The registration fee was INR 500 to experience
+              the amazing workshop. Light lamp was done , God’s blessings were
+              taken and the workshop started with high enthusiasm.The
+              honourable chief guest and the instructor of the workshop was
+              MS. SYEDA AMEENA BEGUM. In her role, she has made significant
+              contributions in utilizing data science to drive value in
+              industry domain. She has been recognised as the best performer
+              in the project “Watson Assistant - IGA”. Prior to joining IBM
+              India, she has introduced data science and its application in
+              the education industry. She has applied Azure cloud services to
+              build and deploy intelligent solutions. She has applied her
+              skills in Machine Learning , Data Analysis and Visualisation,
+              Power BI for interactive analysis. She has a Bachelor of
+              Engineering in information science at Acharya Institute of
+              Technology, Bangalore. She has several publications like : HOW
+              DO I EXPLAIN MACHINE LEARNING TO A KID , 3 different ways a
+              MACHINE can learn , etc.
+            </p>
+            <p>
+              The presentation session was highly motivating and brought a
+              professional atmosphere among all students. The laptops were
+              mandatory . Interactive session took place in which students
+              were asked to put up their questions and ideas. Those who wanted
+              to further continue were invited to join the link for course.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-10">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">Comic-Con Pop Culture Quiz</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body  text-center">
+        <div class="container">
+          <div class="text-white">
+            <p>
+              Comic-Con India’s Pop Culture Forum is an exclusive event that
+              hosts delegates, speakers & stakeholders from across the
+              Pop-culture ecosystem. Comic-Con India’s Pop-Ups feature several
+              awesome experiences, activities and meet-ups.
+            </p>
+            <p>
+              The event “Comic-Con Pop Culture Quiz ” was hosted in our
+              college on the 11th of November.The theme of this event was
+              Anime , Marvel/Dc Movies , Comics , Web Series , Movies , TV
+              Series . In this event , the quiz master asked few questions in
+              different rounds based on this theme and the award was given to
+              the winners . The award for this event was the pass for the
+              Comic-Con Pop Culture Event happening on Saturday.
+            </p>
+            <h4>
+              This event took place in ​three rounds​.
+            </h4>
+            <p>
+              <u>1st round ​Cruel Elimination ROUND :</u> - In this the teams
+              had to guess the name of the character by seeing the shadow of
+              the character. There were 40 slides in total and each was shown
+              for 6 seconds to guess. Once all the slides were shown, the
+              answer sheets were taken and checked by the organisers and cut
+              off for going to the next round was 19. Fourteen teams (14) got
+              selected for the next round.
+            </p>
+            <p>
+              <u>2nd round :</u>- It was a rapid fire round. Each question
+              carries 2 marks. There were brownie points also in which the
+              quiz master will ask some sub questions related to the theme and
+              if any team answers it they get brownie points. There was
+              negative marking also in which they cut marks by (-1) minus one
+              of that team. You can score brownie points by yourself if you do
+              something exciting related to that question. From this round 4
+              teams got selected.
+            </p>
+            <P>
+              <u>3rd round :</u> ​AUDIO ROUND - In this teams had to listen to
+              that audio and tell which song it is and of which show. In some
+              of the audios teams had to sing the song. In this round 2 teams
+              had a tie in between them and then they were asked some comic
+              questions .Finally at the end, 2 teams won the event.
+            </P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-13">
+    <div class="m-3 fixed">
+      <div class="bg-black text-center modalheader py-3">
+        <h1 class="modal-title d-inline">Empyreal Volunteer Drive</h1>
+        <button type="button" class="close mr-4" data-dismiss="modal">
+          <span class="text-white">
+            <h2 class="m-0">&times;</h2>
+          </span>
+        </button>
+      </div>
+      <div class="modal-body mt-3 text-center">
+        <div class="container">
+          <div class="text-white">
+            <p>
+              All the first year students that were a part of the E Cell were first introduced about the festl and were
+              explained
+              how this festival is a big part of the E Cell working, throughout the year. This was done in the first
+              volunteers’ meet
+              where the first year students were introduced to the Primary and Secondary core team that were responsible
+              for the
+              preparations, and everyone was briefed about the fest, the ideas behind it, and how everything was to be
+              done from the
+              next day onwards.
+            </p>
+            <p>
+              The next day of preparation started with everyone being given a chance to showcase their creative talents.
+              First task
+              was to make as many posters as possible so that we can publicize the events that are going to be held
+              under Empyreal-19.
+              Everyone enjoyed drawing, painting, and being creative after the busy academic life at college. The
+              coordinators were
+              giving ideas and helping freshers to manage their thoughts on the chart paper in a better way, while some
+              were also
+              issuing the proper stationary needed.
+            </p>
+            <p>
+              Count of everything was being maintained properly so they can get everything back at the end of the day.
+              At the end of
+              the day, everyone came up with some great posters. The second day of preparation involved poster making
+              and some other
+              great creative work too. Big posters were being made by the core creativity team, where some creative
+              freshers who were
+              good at painting were also given a chance. Students were also seen making artifacts and some other
+              creative
+              installations like the robot Walley, flowers, cones, painting cups and many such things. Origami work was
+              also being
+              done where many students learnt to to work with coloured papers and make creative origami pieces. By the
+              eighth day, the
+              E Cell team was ready with the creative work done and was heading on to the next part of preparation that
+              was the
+              publicizing part.
+            </p>
+            <p>Publicity of the event started with publicizing of the inter- collegiate events. The volunteers were sent
+              to different
+              colleges so that they can make the students aware of this extravaganza which was going to happen in
+              Ramaiah Institute of
+              Technology. The volunteers were asked to report the E Cell sharp at 8 A.M where EDC Coordinators briefed
+              them about the
+              procedures and instructions. Each group used to depart to their assigned colleges along with a permission
+              letter issued
+              from the college, a brochure containing information about the events, some posters that had to be put in
+              the college
               premises and a receipt book. Four volunteers split in groups of two two each and started their work.</p>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <%- include('partials/footer') %>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div>
+  <!-- Footer -->
+  <%- include('partials/footer') %>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-    <script>
-      $(".modal").on("show.bs.modal", function (e) {
-        $(".main-carousel .carousel").carousel("pause");
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+  <script>
+    $(".modal").on("show.bs.modal", function (e) {
+      $(".main-carousel .carousel").carousel("pause");
+    });
+    $(".modal").on("hide.bs.modal", function (e) {
+      $(".main-carousel .carousel").carousel({
+        pause: false
       });
-      $(".modal").on("hide.bs.modal", function (e) {
-        $(".main-carousel .carousel").carousel({ pause: false });
-      
+    });
+
+
+      function prealoader() {
+        if ($("#preloader").length) {
+          $("#preloader").fadeOut("fast", "linear"); // will first fade out the loading animation
+          $("#loader-wrapper").fadeOut("fast", "linear"); // will fade out the loader container
+          $("body").delay(350).css({
+            "overflow-y": "visible"
+          }); // will enable the verital scroll on body
+          $("#mainPage").css({
+            "visibility": "initial"
+          })
+        }
+      }
+
+      function delayNavbar() {
+        $('#EDCNav').css({
+          "opacity": '1',
+          "transform": 'translateX(0)'
+        });
+      }
+
+      // Window load function
+      jQuery(window).on("load", function () {
+        (function ($) {
+          console.log('hey');
+          prealoader();
+          delayNavbar();
+        })(jQuery);
       });
-    </script>
-  </body>
+
+    
+  </script>
+</body>
+
 </html>

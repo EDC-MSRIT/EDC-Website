@@ -19,13 +19,28 @@ function prealoader() {
 
   // Prealoder Ends---------------------------------------------------------------------------------------------------------------------------------
 
+  let slideFromBottom = {
+    origin: "bottom",
+    distance: "50%",
+    opacity: 0,
+    duration: 1000,
+    easing: "ease",
+  };
+  ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
+
+  function delayNavbar(){
+    $('#EDCNav').css({"opacity": '1', "transform": 'translateX(0)'})
+  }
+
 function animateMasthead(){
   
   $('.masthead-content .image').css({
     "opacity":"1",
     "transform":"translateY(0)"
   })
-  
+
+  delayNavbar();
+
 }
 var slideFromRight = {
     delay:500,
