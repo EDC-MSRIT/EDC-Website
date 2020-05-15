@@ -1,3 +1,47 @@
+// Prealoder---------------------------------------------------------------------------------------------------------------------------------
+function prealoader() {
+    if ($("#preloader").length) {
+      $("#preloader").fadeOut("fast", "linear"); // will first fade out the loading animation
+      $("#loader-wrapper").fadeOut("fast", "linear"); // will fade out the loader container
+      $("body").delay(350).css({ "overflow-y": "visible" }); // will enable the verital scroll on body // will reveal the main page
+      $('html').css({'height':'initial'})
+      $("#mainPage").css({"visibility":"initial"})
+    }
+  }
+  
+  // Window load function
+  jQuery(window).on("load", function () {
+    (function ($) {
+      prealoader();
+      animateMasthead();
+    })(jQuery);
+  });
+
+  // Prealoder Ends---------------------------------------------------------------------------------------------------------------------------------
+
+  let slideFromBottom = {
+    origin: "bottom",
+    distance: "50%",
+    opacity: 0,
+    duration: 1000,
+    easing: "ease",
+  };
+  ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
+
+  function delayNavbar(){
+    $('#EDCNav').css({"opacity": '1', "transform": 'translateX(0)'})
+  }
+
+function animateMasthead(){
+  
+  $('.masthead-content .image').css({
+    "opacity":"1",
+    "transform":"translateY(0)"
+  })
+
+  delayNavbar();
+
+}
 var slideFromRight = {
     delay:500,
     distance: '50%',
