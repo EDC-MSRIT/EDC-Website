@@ -573,6 +573,7 @@ html {
 #s5:checked ~ #slide3 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(-50%,0,-200px);
+  filter:brightness(0.25)
 }
 
 #s1:checked ~ #slide5, #s2:checked ~ #slide1,
@@ -580,6 +581,7 @@ html {
 #s5:checked ~ #slide4 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(-25%,0,-100px);
+  filter:brightness(0.5)
 }
 
 #s1:checked ~ #slide1, #s2:checked ~ #slide2,
@@ -594,6 +596,7 @@ html {
 #s5:checked ~ #slide1 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
   transform: translate3d(25%,0,-100px);
+  filter:brightness(0.5)
 }
 
 #s1:checked ~ #slide3, #s2:checked ~ #slide4,
@@ -601,6 +604,7 @@ html {
 #s5:checked ~ #slide2 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
   transform: translate3d(50%,0,-200px);
+  filter:brightness(0.25)
 }
 
 #slide1 { background:center / cover no-repeat url("../images/landingEvents/o1.jpeg") ; }
@@ -629,6 +633,7 @@ html {
   #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
     transform: translate3d(0,-60%,-200px);
+    
   }
   
   #s1:checked ~ #slide5, #s2:checked ~ #slide1,
