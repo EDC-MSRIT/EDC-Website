@@ -613,7 +613,7 @@ html {
 #slide4 { background:center / cover no-repeat url("../images/landingEvents/o4.jpeg") ; }
 #slide5 { background:center / cover no-repeat url("../images/landingEvents/o5.jpeg") ; }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:500px){
 
   section#portfolio .portfolio-wrapper {
     padding-top: 50px;
@@ -621,8 +621,8 @@ html {
   }
 
   #slider{
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     width:150vw;
     height: 60vw;
     position: relative;
@@ -663,4 +663,11 @@ html {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
     transform: translate3d(0,60%,-200px);
   } 
+}
+
+@media screen and (max-width:420px){
+  #slider{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
 }
