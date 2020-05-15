@@ -315,28 +315,24 @@ header.masthead {
 }
 
 section#portfolio {
-  background-image: url("../images/backgrounds/section-background.gif");
+  background-image: url("../images/backgrounds/section-background.webp");
   padding: 0;
 }
 
 section#portfolio .portfolio-wrapper {
   width: 100%;
   height: 100%;
-  backdrop-filter: grayscale(1) brightness(0.5);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.5);
   padding: 100px;
 }
 
 section#team {
-  background-image: url("../images/backgrounds/section-background.gif");
+  background-image: url("../images/backgrounds/section-background.webp");
   padding: 0;
 }
 
 section#team .team-wrapper {
   width: 100%;
   height: 100%;
-  backdrop-filter: grayscale(1) brightness(0.5);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.5);
   padding: 100px;
 }
 @media (max-width: 500px) {
