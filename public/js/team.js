@@ -42,9 +42,9 @@ jQuery(window).on("load", function () {
       duration: 1000,
       easing: "ease",
     };
-    
-    ScrollReveal().reveal(".slide-enter-left", slideFromLeft);
-    ScrollReveal().reveal(".slide-enter-right", slideFromRight);
+    var windowWidth = $(window).width()
+    ScrollReveal().reveal(".slide-enter-left", windowWidth>650?slideFromLeft:slideFromBottom);
+    ScrollReveal().reveal(".slide-enter-right", windowWidth>650?slideFromRight:slideFromBottom);
     ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
     
   
