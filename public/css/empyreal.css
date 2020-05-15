@@ -333,8 +333,7 @@ section {
   height: 100%;
   width: 100%;
   content: " ";
-  background-image: url("../images/backgrounds/section-background.gif");
-  filter: grayscale(1) brightness(25%);
+  background-image: url("../images/backgrounds/section-background.webp");
 }
 
 .my-story-session{
@@ -351,8 +350,7 @@ section {
   height: 100%;
   width: 100%;
   content: " ";
-  background-image: url("../images/backgrounds/section-background.gif");
-  filter: grayscale(1) brightness(25%);
+  background-image: url("../images/backgrounds/section-background.webp");
 }
 
 .card-body p{
