@@ -19,37 +19,36 @@ jQuery(window).on("load", function () {
   (function ($) {
     prealoader();
     delayNavbar();
+    var slideFromLeft = {
+      distance: "50%",
+      origin: "left",
+      opacity: 0,
+      duration: 1000,
+      easing: "ease",
+    };
+    
+    var slideFromRight = {
+      distance: "50%",
+      origin: "right",
+      opacity: 0,
+      duration: 1000,
+      easing: "ease",
+    };
+    
+    var slideFromBottom = {
+      distance: "50%",
+      origin: "bottom",
+      opacity: 0,
+      duration: 1000,
+      easing: "ease",
+    };
+    
+    ScrollReveal().reveal(".slide-enter-left", slideFromLeft);
+    ScrollReveal().reveal(".slide-enter-right", slideFromRight);
+    ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
+    
+  
   })(jQuery);
 });
 
 // Prealoder Ends---------------------------------------------------------------------------------------------------------------------------------
-var slideFromLeft = {
-  delay: 500,
-  distance: "50%",
-  origin: "left",
-  opacity: 0,
-  duration: 1000,
-  easing: "ease",
-};
-
-var slideFromRight = {
-  delay: 500,
-  distance: "50%",
-  origin: "right",
-  opacity: 0,
-  duration: 1000,
-  easing: "ease",
-};
-
-var slideFromBottom = {
-  delay: 500,
-  distance: "50%",
-  origin: "bottom",
-  opacity: 0,
-  duration: 1000,
-  easing: "ease",
-};
-
-ScrollReveal().reveal(".slide-enter-left", slideFromLeft);
-ScrollReveal().reveal(".slide-enter-right", slideFromRight);
-ScrollReveal().reveal(".slide-enter-bottom", slideFromBottom);
