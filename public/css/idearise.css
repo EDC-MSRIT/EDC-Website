@@ -131,10 +131,10 @@ body {
 }
 @media (max-width: 550px) {
   .carousel {
-    width: 100% !important;
+    width: 90% !important;
   }
   .carousel-item img {
-    height: 50vh !important;
+    height: 40% !important;
   }
   #obj h3 {
     font-size: 1.95em !important;
