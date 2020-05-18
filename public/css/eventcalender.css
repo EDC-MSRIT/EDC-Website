@@ -338,6 +338,10 @@ hr {
     bottom: -35px;
     height: 35px;
   }
+  .card:hover {
+    transition: none;
+    transform: none;
+  }
   .line-fix::after {
     display: none;
   }
