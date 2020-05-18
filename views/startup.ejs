@@ -13,218 +13,251 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!--ScrollReveal.js CDN-->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal.debug = true;
+  </script>
+
+  <!--TimelineMax and TweenMax CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
     rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
-      type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-  
+  <!-- Custom styles for this template -->
+
   <link href="css/startup.css" rel="stylesheet">
-  
+
   <link href="css/scrollbar.css" rel="stylesheet">
 </head>
 
-<body style="background-color: white;">
-  
-  <!-- Navigation -->
-  <%- include('partials/navbar.ejs') %>
-  <!--Navigation ends-->
-  
-  <div class="container-fluids" style="background-image: url('images/backgrounds/section-background.gif');">
-    <h1 class="section-heading text-primary text-uppercase text-center">STARTUPS</h1>
+<body style="background-color: white; overflow-y: hidden;">
+
+  <!-- Preloader Starts-->
+
+  <div id="loader-wrapper">
+    <div id="preloader">
+      <%- include('partials/preloader.ejs') %>
+    </div>
   </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        <div class="p-5 image-right">
-          <img class="img-fluid" src="images/startups/ltn (2).jpeg" alt="">
+
+  <!-- Preloader ends-->
+
+  <div id='mainPage' class="main-page-wrapper" style="visibility:hidden;">
+
+    <!-- Navigation -->
+      <%- include('partials/navbar.ejs') %>
+    <!--Navigation ends-->
+
+    <div class="container-fluids" style="background-image: url('images/backgrounds/section-background.webp');">
+      <h1 class="section-heading text-primary text-uppercase text-center">STARTUPS</h1>
+    </div>
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 image-right">
+            <img class="img-fluid enter-logo" src="images/startups/ltn (2).jpeg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6 order-lg-1">
-        <div class="p-5 image-left">
-          <h2 class="display-4">Listen To News</h2>
-          <h4 style="display:inline">Founder : <span>
-              <P style="display:inline">Mr. Bhanu Krishna</P>
-            </span> </h4><br>
-          <!-- <h3 style="display:inline">Email id : <span><P style="display:inline">bhanukrishna34@gmail.com</P></span> </h3><br>-->
-          <h4>Contact number :</h4>
-          <h4> 9538717524</h4>
-             
-          
+        <div class="col-lg-6 order-lg-1 slide-enter-bottom">
+          <div class="p-5 image-left">
+            <h2 class="display-4">Listen To News</h2>
+            <h4 style="display:inline">Founder : <span>
+                <P style="display:inline">Mr. Bhanu Krishna</P>
+              </span> </h4><br>
+            <!-- <h3 style="display:inline">Email id : <span><P style="display:inline">bhanukrishna34@gmail.com</P></span> </h3><br>-->
+            <h4>Contact number :</h4>
+            <h4> 9538717524</h4>
+
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="p-5 image-left">
-          <img class="img-fluid" src="images/startups/bbb.jpeg" alt="">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5 image-left">
+            <img class="img-fluid enter-logo" src="images/startups/bbb.jpeg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-5 image-right">
-          <h2 class="display-4">366 The Brewing Company</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. A Vishnupati</h4>
-          <h4>Mr. Koushik Mallesh</h4>
-          <h4>Ms. Parmita Narang</h4>
-          <h4 class="year">Year of Establishment : 2015</h4>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        <div class="p-5 image-right">
-          <img class="img-fluid" src="images/startups/edrive.jpeg" alt="">
-        </div>
-      </div>
-      <div class="col-lg-6 order-lg-1">
-        <div class="p-5 image-left">
-          <h2 class="display-4">Eco-Drive</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. Suraj Singh</h4>
-          <h4>Mr. Sumit Kumar</h p-04>
-          <h4 class="year">Year of Establishment : 2016</h4>
-          <p></p>
+        <div class="col-lg-6 slide-enter-bottom">
+          <div class="p-5 image-right">
+            <h2 class="display-4">366 The Brewing Company</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. A Vishnupati</h4>
+            <h4>Mr. Koushik Mallesh</h4>
+            <h4>Ms. Parmita Narang</h4>
+            <h4 class="year">Year of Establishment : 2015</h4>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="p-5 image-left">
-          <img class="img-fluid" src="images/startups/hope.jpg" alt="">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 image-right">
+            <img class="img-fluid enter-logo" src="images/startups/edrive.jpeg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-5 image-right">
-          <h2 class="display-4"> H.O.P.E</h2>
-          <h4> Founder : Mr. Yogesh Suresh </h4>
-          <h4>Year of Establishment : 2017</h4>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        <div class="p-5 image-right">
-          <img class="img-fluid" src="images/startups/geek.jpeg" alt="">
-        </div>
-      </div>
-      <div class="col-lg-6 order-lg-1">
-        <div class="p-5 image-left">
-          <h2 class="display-4">GeekSynergy Technologies Pvt Ltd</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. Gowrav L</h4>
-          <h4>Mr. A B Sachin Anchan</h4>
-          <h4>Mr. Anil Kumar M</h4>
-          <h4 p-04 class="year">Year of Establishment : 2015</h4>
-          <p></p>
+        <div class="col-lg-6 order-lg-1 slide-enter-bottom">
+          <div class="p-5 image-left">
+            <h2 class="display-4">Eco-Drive</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. Suraj Singh</h4>
+            <h4>Mr. Sumit Kumar</h p-04>
+              <h4 class="year">Year of Establishment : 2016</h4>
+              <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="p-5 image-left">
-          <img class="img-fluid" src="images/startups/yantrak.png" alt="">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5 image-left">
+            <img class="img-fluid enter-logo" src="images/startups/hope.jpg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-5 image-right">
-          <h2 class="display-4">YANTRAK</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. Sonu Singh</h4>
-          <h4>Mr. Abhijith K G</h4>
-          <h4>Mr. Chetan S Naik</h4>
-          <h4 class="year p-0">Year of Establishment : 2012</h4>
-          <p></p>
+        <div class="col-lg-6 slide-enter-bottom">
+          <div class="p-5 image-right">
+            <h2 class="display-4"> H.O.P.E</h2>
+            <h4> Founder : Mr. Yogesh Suresh </h4>
+            <h4>Year of Establishment : 2017</h4>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        <div class="p-5 image-right">
-          <img class="img-fluid" src="images/startups/creative.png" alt="">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 image-right">
+            <img class="img-fluid enter-logo" src="images/startups/geek.jpeg" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6 order-lg-1">
-        <div class="p-5 image-left">
-          <h2 class="display-4"> CreatHives</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. Manoj Kumar Kalaivanan</h4>
-          <h4>Mr. Vignesh Subramanyam</h4>
-          <h4>Mr. Jayanth Veerandra</h4>
-          <h4>Ms. Ranjini Prabhu</h4>
-          <h4>Mr.Vishnu Tenkayala</h4>
-          <h4>Contact:8867500207</h4>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="p-5 image-left">
-          <img class="img-fluid" src="images/startups/aidapp.png"  alt="">
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="p-5 image-right">
-          <h2 class="display-4">Aidapp Intelligence Pvt. Limited </h2>
-          <h4>Founder :</h4>
-          <h4>Mr. Divyansh Lohia </h4>
-          <h4>Mr. Koushik AS</h4>
-          <h4>Mr. Daniel Monteiro</h4>
-          <h4 class="year">Year of Establishment : 2017</h4>
+        <div class="col-lg-6 order-lg-1 slide-enter-bottom">
+          <div class="p-5 image-left">
+            <h2 class="display-4">GeekSynergy Technologies Pvt Ltd</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. Gowrav L</h4>
+            <h4>Mr. A B Sachin Anchan</h4>
+            <h4>Mr. Anil Kumar M</h4>
+            <h4 p-04 class="year">Year of Establishment : 2015</h4>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container px-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6 order-lg-2">
-        <div class="p-5 image-right">
-          <img class="img-fluid" src="images/startups/adcom12.png" alt="">
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5 image-left">
+            <img class="img-fluid enter-logo" src="images/startups/yantrak.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6 order-lg-1">
-        <div class="p-5 image-left mb-5">
-          <h2 class="display-4">@DCOM - Marketing and Advertising</h2>
-          <h4>Founders : </h4>
-          <h4>Mr. Niraj Agarwalla
-            <h4>Mr. Nirvana Dogra</h4>
-            <h4>Mr. Pratush Maheshwari</h4>
-            <h4 class="year">Year of Establishment : 2018</h4>
+        <div class="col-lg-6 slide-enter-bottom">
+          <div class="p-5 image-right">
+            <h2 class="display-4">YANTRAK</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. Sonu Singh</h4>
+            <h4>Mr. Abhijith K G</h4>
+            <h4>Mr. Chetan S Naik</h4>
+            <h4 class="year p-0">Year of Establishment : 2012</h4>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 image-right">
+            <img class="img-fluid enter-logo" src="images/startups/creative.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 slide-enter-bottom">
+          <div class="p-5 image-left">
+            <h2 class="display-4"> CreatHives</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. Manoj Kumar Kalaivanan</h4>
+            <h4>Mr. Vignesh Subramanyam</h4>
+            <h4>Mr. Jayanth Veerandra</h4>
+            <h4>Ms. Ranjini Prabhu</h4>
+            <h4>Mr.Vishnu Tenkayala</h4>
+            <h4>Contact:8867500207</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5 image-left">
+            <img class="img-fluid enter-logo" src="images/startups/aidapp.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 slide-enter-bottom">
+          <div class="p-5 image-right">
+            <h2 class="display-4">Aidapp Intelligence Pvt. Limited </h2>
+            <h4>Founder :</h4>
+            <h4>Mr. Divyansh Lohia </h4>
+            <h4>Mr. Koushik AS</h4>
+            <h4>Mr. Daniel Monteiro</h4>
+            <h4 class="year">Year of Establishment : 2017</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5 image-right">
+            <img class="img-fluid enter-logo" src="images/startups/adcom12.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1 slide-enter-bottom">
+          <div class="p-5 image-left mb-5">
+            <h2 class="display-4">@DCOM - Marketing and Advertising</h2>
+            <h4>Founders : </h4>
+            <h4>Mr. Niraj Agarwalla
+              <h4>Mr. Nirvana Dogra</h4>
+              <h4>Mr. Pratush Maheshwari</h4>
+              <h4 class="year">Year of Establishment : 2018</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <%- include('partials/footer') %>
   </div>
-  <!-- Footer -->
-  <%- include('partials/footer') %>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Costom JS -->
+  <script src="js/startup.js"></script>
 
 </body>
 

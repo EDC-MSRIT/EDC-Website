@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>EDC, RIT
-    </title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <!--Favicon -->
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
-    <!-- CSS Files -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>EDC, RIT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!--ScrollReveal.js CDN-->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal.debug = true;
+  </script>
     
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/team.css">
@@ -26,7 +33,7 @@
   <link href="css/scrollbar.css" rel="stylesheet">    
 </head>
 
-<body class="all">
+<body style="overflow-y: hidden; overflow-x: hidden;">
 <!-- Preloader Starts-->
 
 <div id="loader-wrapper">
@@ -38,16 +45,19 @@
 <!-- Preloader ends-->
 
 <div id='mainPage' class="main-page-wrapper" style="visibility: hidden;">   
-<%- include('partials/navbar.ejs') %>
-    
-  <div class="container-fluids" style="background-image: url('images/backgrounds/section-background.gif');">
+  
+  <!-- Navigation -->
+  <%- include('partials/navbar.ejs') %>
+  <!--Navigation ends-->
+  
+  <div class="container-fluids" style="background-image: url('images/backgrounds/section-background.webp');">
     <h1 class="section-heading text-primary text-uppercase text-center">MEET THE TEAM</h1>
   </div>
     <!-- End Page Header -->
-    <h1 class="page-section-heading">Overall Coordinators</h1>
+    <h1 class="page-section-heading slide-enter-bottom">Overall Coordinators</h1>
     <div>
     <section id="team"  class="section mb-5">
-        <div class="team-member" style="background-image:url('/images/team/vaibhav.webp');">
+        <div class="team-member slide-enter-left" style="background-image:url('/images/team/vaibhav.webp');">
             <div class="overlay">
               <div class = "items"></div>
               <div class = "items head">
@@ -62,7 +72,7 @@
         </div>
         
 
-        <div class="team-member" style="background-image:url('/images/team/vivek.webp');">
+        <div class="team-member slide-enter-right" style="background-image:url('/images/team/vivek.webp');">
           <div class="overlay">
             <div class = "items"></div>
             <div class = "items head">
@@ -78,7 +88,7 @@
 
     </section>
     <section>
-      <div class="team-member" style="background-image:url('/images/team/niraj.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('/images/team/niraj.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -93,7 +103,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('/images/team/rubina.webp');">
+    <div class="team-member slide-enter-bottom" style="background-image:url('/images/team/rubina.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -108,7 +118,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('/images/team/annada.webp');">
+    <div class="team-member slide-enter-right" style="background-image:url('/images/team/annada.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -124,7 +134,7 @@
     </div>
 
 
-    <div class="team-member" style="background-image:url('/images/team/abhigya.webp');">
+    <div class="team-member slide-enter-left" style="background-image:url('/images/team/abhigya.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -139,7 +149,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('/images/team/aditya.webp');">
+    <div class="team-member slide-enter-bottom" style="background-image:url('/images/team/aditya.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -154,7 +164,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('/images/team/jagjot.webp');">
+    <div class="team-member slide-enter-right" style="background-image:url('/images/team/jagjot.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -169,7 +179,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('images/team/raksitha.webp');">
+    <div class="team-member slide-enter-left" style="background-image:url('images/team/raksitha.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -184,7 +194,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('images/team/aakriti.webp');">
+    <div class="team-member slide-enter-bottom" style="background-image:url('images/team/aakriti.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -199,7 +209,7 @@
       </div>
     </div>
 
-    <div class="team-member" style="background-image:url('images/team/syed.webp');">
+    <div class="team-member slide-enter-right" style="background-image:url('images/team/syed.webp');">
       <div class="overlay">
         <div class = "items"></div>
         <div class = "items head">
@@ -215,10 +225,10 @@
     </div>
     </section>
     
-    <h1 class="page-section-heading mt-5">Student Coordinators</h1>
+    <h1 class="page-section-heading mt-5 slide-enter-bottom">Student Coordinators</h1>
     
     <section>
-      <div class="team-member" style="background-image:url('images/team/zeel.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('images/team/zeel.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -234,7 +244,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/satyam.webp');">
+      <div class="team-member slide-enter-bottom" style="background-image:url('images/team/satyam.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -249,7 +259,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/prasoon.webp');">
+      <div class="team-member slide-enter-right" style="background-image:url('images/team/prasoon.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -265,7 +275,7 @@
       </div>
       
 
-      <div class="team-member" style="background-image:url('images/team/aman.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('images/team/aman.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -281,7 +291,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/nandawat.webp');">
+      <div class="team-member slide-enter-bottom" style="background-image:url('images/team/nandawat.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -297,7 +307,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/navya.webp');">
+      <div class="team-member slide-enter-right" style="background-image:url('images/team/navya.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -313,7 +323,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/sreeja.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('images/team/sreeja.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -328,7 +338,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/aakash.webp');">
+      <div class="team-member slide-enter-bottom" style="background-image:url('images/team/aakash.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -343,7 +353,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/karn.webp');">
+      <div class="team-member slide-enter-right" style="background-image:url('images/team/karn.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -359,7 +369,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/harsh.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('images/team/harsh.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -375,7 +385,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/shikhar.webp');">
+      <div class="team-member slide-enter-bottom" style="background-image:url('images/team/shikhar.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -390,7 +400,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/chirayu.webp');">
+      <div class="team-member slide-enter-right" style="background-image:url('images/team/chirayu.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -405,7 +415,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/vedansh.webp');">
+      <div class="team-member slide-enter-left" style="background-image:url('images/team/vedansh.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -421,7 +431,7 @@
       </div>
 
 
-      <div class="team-member" style="background-image:url('images/team/vinay.webp');">
+      <div class="team-member slide-enter-bottom" style="background-image:url('images/team/vinay.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -436,7 +446,7 @@
         </div>
       </div>
 
-      <div class="team-member" style="background-image:url('images/team/tilak.webp');">
+      <div class="team-member slide-enter-right" style="background-image:url('images/team/tilak.webp');">
         <div class="overlay">
           <div class = "items"></div>
           <div class = "items head">
@@ -452,13 +462,14 @@
       </div>
     </section>
   </div>
-    <!-- End Members -->
-    <!-- Footer -->
-    <%- include('partials/footer') %>
 </div>
-    <!--Local JS-->
-    <script src="js/team.js"></script>
-    <!-- End JS Files -->
+  <!-- Footer -->
+  <%- include('partials/footer') %>
+  <!-- Bootstrap core JavaScript -->
+  
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/team.js"></script>
 </body>
 
 </html>
