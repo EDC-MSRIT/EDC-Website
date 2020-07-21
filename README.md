@@ -4,5 +4,5 @@
 
 <ul>
   <li>npm install</li>
-  <li>npm start</li>
+  <li>node app.js</li>
 </ul>
